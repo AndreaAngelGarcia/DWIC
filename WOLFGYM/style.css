@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&family=Montserrat:ital@1&family=Open+Sans&display=swap');
 
-body {
+body {               /*FUENTE DE LETRA Y COLOR DE FONDO DEL BODY PREDETERMINADO*/
 	font-family: montserrat;
 	background: #151515;
 }
 
+/*AQUI HE CENTRADO LOS ROW Y CONTAINERFLUID PARA QUE NO ME SALGAN ESPACIOS EN BLANCO EN LOS EXTREMOS*/					
 div.row {
 	margin-right: 0px;
 }
@@ -35,6 +36,8 @@ div.container-fluid {
 	margin-right: 20px;
 }
 
+
+/* BOTÓN PARA DESCARGAR EL HORARIO */
 .btn {
 	align-items: center;
 }
@@ -215,7 +218,6 @@ fieldset[disabled] .btn-sample.active {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.navbar-nav {
 		text-align: center;
-
 	}
 
 	.navbar-collapse {
@@ -243,7 +245,6 @@ fieldset[disabled] .btn-sample.active {
 @media only screen and (max-width: 767px) {
 	.navbar-nav {
 		text-align: center;
-
 	}
 
 	.navbar-collapse .nav-item .nav-link {
@@ -290,6 +291,7 @@ fieldset[disabled] .btn-sample.active {
 }
 
 /************ SOBRE NOSOTROS ****************/
+/*EL APARTADO SOBRE NOSOTROS TIENE UN TITULO CON SU ROW Y COL Y DESPUES UN ROW Y 3 COL PARA AÑADIR LOS APARTADOS*/
 .choseus-section {
 	background: #0a0a0a;
 	padding-top: 60px;
@@ -331,6 +333,10 @@ fieldset[disabled] .btn-sample.active {
 }
 
 /*********** SECCIÓN CLASES *****************/
+/*LA SECCIÓN ESTÁ DIVIDIDA EN 8 CARTAS:
+TODAS CON UN MISMO ROW Y CADA UNA CON SU RESPECTIVO COL,
+LAS DOS CARTAS DEL FINAL SON DIFERENTES AL RESTO Y VAN JUNTAS */
+/*LA SECCIÓN TIENE PADDING Y MARGENES, LUEGO CADA CARTA TIENE LA IMAGEN Y LA PARTE DE ABAJO CON EL NOMBRE DE LA CLASE*/
 .classes-section {
 	background: #151515;
 	padding-bottom: 80px;
@@ -409,6 +415,10 @@ fieldset[disabled] .btn-sample.active {
 }
 
 /**************** GALERIA DE FOTOS ********************/
+/*LA GALERIA DE FOTOS ES PREDETERMINADA DE BOOSTRAP,
+TENEMOS EL TITULO DE LAS INSTALACIONES ARRIBA CON SU COL Y ROW,
+Y LUEGO TENEMOS EL ROW CON SUS COL EN LOS QUE HAY DOS FOTOS EN CADA,
+LUEGO HE METIDO EN EL CSS QUE CUANDO PASES POR ENCIMA BAJE UN POCO LA OPACIDAD*/
 .gallery-section {
 	padding-top: 80px;
 	padding-bottom: 80px;
@@ -424,7 +434,8 @@ fieldset[disabled] .btn-sample.active {
 }
 
 /****************** SECCIÓN PRECIOS ********************/
-.pricing-section {
+/*3 CARTAS DIVIDIDAS POR COL CON SU TAMAÑO, SIN COLOR DE FONDO, POSICIÓN, MÁRGENES Y PADDING PREDETERMINADOS*/
+.pricing-section {					
 	background: #151515;
 	padding-bottom: 80px;
 	padding-top: 60px;
@@ -612,9 +623,10 @@ fieldset[disabled] .btn-sample.active {
 }
 
 /************ EQUIPO *******************/
-.card-container {
+.card-container { 	/*6 CARTAS DIVIDIDAS POR COL CON SU TAMAÑO, COLOR, POSICIÓN, MARGENES Y PADDING PREDETERMINADOS*/
 	padding: 100px 0px;
 	-webkit-perspective: 1000;
+	
 }
 
 .profile-card-2 {
@@ -626,10 +638,12 @@ fieldset[disabled] .btn-sample.active {
 	margin: 10px auto;
 	cursor: pointer;
 	padding-top: 5%;
+	border-radius: 10px;
 }
 
 .profile-card-2 img {
 	transition: all linear 0.25s;
+	border-radius: 10px;
 }
 
 .profile-card-2 .profile-name {
@@ -685,7 +699,10 @@ fieldset[disabled] .btn-sample.active {
 }
 
 /************** SECCION CONTACTO *********************/
-.contact-section {
+/* LA SECCIÓN DE CONTACTO ESTÁ DIVIDIDA EN 3 PARTES,TODO EN EL MISMO ROW:
+TENEMOS UN COL CON LA INFORMACIÓN DE CONTACTO, LUEGO OTRO COL CON EL FORMULARIO
+Y AL FINAL UN APARTADO DE MAPA */
+.contact-section {						
 	background: #151515;
 	padding-top: 50px;
 	padding-bottom: 50px;

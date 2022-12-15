@@ -8,24 +8,21 @@ html {
 }
 
 /* HEADER */
-
 .container {
     display:flex;
     justify-content: center;
     align-items: center;
 }
 
-.logocol a{
-    
-}
-
-
-/*Background color*/
+/*COLOR DEL CONTAINER DEL FORMULARIO*/
 #grad1 {
     background-color: #151515;
 }
 
-/*form styles*/
+/***********FORM**********/
+/*TODO EL FORMULARIO ESTÁ METIDO EN UNA SECCIÓN,
+LUEGO TIENE UN ROW PARA TODO EL FORMULARIO CON SU COL CON TODAS LAS MEDIDAS
+Y LUEGO OTRO ROW PARA LA INFORMACIÓN DE DENTRO Y SU COL CORRESPONDIENTE*/
 #msform {
     text-align: center;
     position: relative;
@@ -41,8 +38,6 @@ html {
     box-sizing: border-box;
     width: 94%;
     margin: 0 3% 20px 3%;
-
-    /*stacking fieldsets above each other*/
     position: relative;
 }
 
@@ -54,12 +49,9 @@ html {
     width: 100%;
     margin: 0;
     padding-bottom: 20px;
-
-    /*stacking fieldsets above each other*/
     position: relative;
 }
 
-/*Hide all except first fieldset*/
 #msform fieldset:not(:first-of-type) {
     display: none;
 }
@@ -96,7 +88,6 @@ html {
     outline-width: 0;
 }
 
-/*Blue Buttons*/
 #msform .action-button {
     width: 100px;
     background: #bf6217;
@@ -132,7 +123,6 @@ html {
     box-shadow: 0 0 0 2px white, 0 0 0 3px #616161;
 }
 
-/*Dropdown List Exp Date*/
 select.list-dt {
     border: none;
     outline: 0;
@@ -145,7 +135,7 @@ select.list-dt:focus {
     border-bottom: 2px solid skyblue;
 }
 
-/*The background card*/
+/*FONDO DE LA CARTA*/
 .card {
     z-index: 0;
     border: none;
@@ -153,7 +143,6 @@ select.list-dt:focus {
     position: relative;
 }
 
-/*FieldSet headings*/
 .fs-title {
     font-size: 25px;
     color: #2C3E50;
@@ -202,7 +191,6 @@ select.list-dt:focus {
     content: "\f00c";
 }
 
-/*ProgressBar before any progress*/
 #progressbar li:before {
     width: 50px;
     height: 50px;
@@ -216,7 +204,6 @@ select.list-dt:focus {
     padding: 2px;
 }
 
-/*ProgressBar connectors*/
 #progressbar li:after {
     content: '';
     width: 100%;
@@ -228,13 +215,12 @@ select.list-dt:focus {
     z-index: -1;
 }
 
-/*Color number of the step and the connector before it*/
 #progressbar li.active:before,
 #progressbar li.active:after {
     background: #bf6217;
 }
 
-/*Imaged Radio Buttons*/
+/*BOTONES DE ABAJO*/
 .radio-group {
     display: flex;
     justify-content: center;

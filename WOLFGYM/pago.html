@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta charset='utf-8'>
+    <meta charset='utf-8'/>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>PAGO</title><!--Título de la página-->
     <link rel="shortcut icon" href="img/logo.ico"><!--Icono de la página-->
@@ -14,7 +14,6 @@
 
 <body className='snippet-body'>
     <div class="container-fluid" id="grad1"><!--CONTAINER FLUID PARA QUE OCUPE TODA LA PÁGINA-->
-
         <div class="container"><!--CONTAINER PARA PONER EL LOGO JUSTO EN EL MEDIO-->
             <div class="row">
                 <div class="d-inline-block logocol">
@@ -22,7 +21,6 @@
                 </div>
             </div>
         </div>
-
         <!--SECCIÓN FORMULARIO-->
         <section class="formulario">
             <div class="row justify-content-center mt-0"><!--ROW QUE OCUPA TODO EL FORMULARIO-->
@@ -68,10 +66,12 @@
                                             <h2 class="fs-title">Información de pago</h2>
                                             <div class="radio-group">
                                                 <div class='radio' data-value="Tarjeta de crédito"><img
-                                                        src="https://i.imgur.com/XzOzVHZ.jpg" width="200px" height="100px">
+                                                        src="https://i.imgur.com/XzOzVHZ.jpg" width="200px"
+                                                        height="100px">
                                                 </div>
                                                 <div class='radio' data-value="Paypal"><img
-                                                        src="https://i.imgur.com/jXjwZlj.jpg" width="200px" height="100px">
+                                                        src="https://i.imgur.com/jXjwZlj.jpg" width="200px"
+                                                        height="100px">
                                                 </div>
                                                 <br>
                                             </div>
@@ -115,24 +115,25 @@
                                         </div>
                                         <input type="button" name="previous" class="previous action-button-previous"
                                             value="Anterior" />
-                                        <input type="button" name="make_payment" class="next action-button" value="Aceptar" />
+                                        <input type="button" name="make_payment" class="next action-button"
+                                            value="Aceptar" />
                                     </fieldset>
-        
+
                                     <fieldset>
                                         <div class="form-card">
                                             <h2 class="fs-title text-center">Pago completado! </h2>
-        
+
                                             <br><br>
-        
+
                                             <div class="row justify-content-center">
                                                 <div class="col-3">
                                                     <img src="https://img.icons8.com/color/96/000000/ok--v2.png"
                                                         class="fit-image">
                                                 </div>
                                             </div>
-        
+
                                             <br><br>
-        
+
                                             <div class="row justify-content-center">
                                                 <div class="col-7 text-center">
                                                     <h5>En breves recibirás un correo de confirmación.</h5>
@@ -146,32 +147,24 @@
                     </div>
                 </div>
             </div>
-            </div>
         </section>
+    </div>
     
-    <script type='text/javascript'
-        src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
-    
+    <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+
     <!-- JAVASCRIPT PARA QUE FUNCIONE CORRECTAMENTE AL DARLE CLICK A LOS STEPS-->
     <script type='text/javascript'>$(document).ready(function () {
-
-            var current_fs, next_fs, previous_fs; //fieldsets
-            var opacity;
-
+        var current_fs, next_fs, previous_fs; //fieldsets
+        var opacity;
             $(".next").click(function () {
 
                 current_fs = $(this).parent();
                 next_fs = $(this).parent().next();
 
-                //Add Class Active
                 $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
-
-                //show the next fieldset
                 next_fs.show();
-                //hide the current fieldset with style
                 current_fs.animate({ opacity: 0 }, {
                     step: function (now) {
-                        // for making fielset appear animation
                         opacity = 1 - now;
 
                         current_fs.css({
@@ -189,18 +182,11 @@
                 current_fs = $(this).parent();
                 previous_fs = $(this).parent().prev();
 
-                //Remove class active
                 $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
-
-                //show the previous fieldset
                 previous_fs.show();
-
-                //hide the current fieldset with style
                 current_fs.animate({ opacity: 0 }, {
                     step: function (now) {
-                        // for making fielset appear animation
                         opacity = 1 - now;
-
                         current_fs.css({
                             'display': 'none',
                             'position': 'relative'
@@ -220,12 +206,13 @@
                 return false;
             })
 
-        });</script>
+        });
+    </script>
     <script type='text/javascript'>var myLink = document.querySelector('a[href="#"]');
         myLink.addEventListener('click', function (e) {
             e.preventDefault();
-        });</script>
-
+        });
+    </script>
 </body>
 
 </html>
