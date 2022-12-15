@@ -1,36 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&family=Montserrat:ital@1&family=Open+Sans&display=swap');
+
 body {
 	font-family: montserrat;
 	background: #151515;
 }
 
-div.row{
+div.row {
 	margin-right: 0px;
 }
- 
-div.container-fluid{
+
+div.container-fluid {
 	padding-right: 0px;
 	padding-left: 0px;
 }
 
 /* CAMBIO COLOR DEL SCROLL */
-::-webkit-scrollbar{
+::-webkit-scrollbar {
 	width: 11px;
 	background: white;
-  }
-  
-  ::-webkit-scrollbar-thumb{
+}
+
+::-webkit-scrollbar-thumb {
 	width: 100%;
 	background: #BF6217;
 	border-radius: 2em;
-  }
-  
-  
-/* logo*/
-.logo {
-	width:30%;           /*Tamaño logo*/
 }
 
-.editar button{
+/* logo*/
+.logo {
+	width: 30%;                           /*Tamaño logo*/
+}
+
+.editar button {
 	margin-right: 20px;
 }
 
@@ -47,8 +48,8 @@ div.container-fluid{
 }
 
 .btn-sample:hover {
-	font-size:31px;
-	transition:0.5s;
+	font-size: 31px;
+	transition: 0.5s;
 	color: #BF6217;
 	background-color: #ffffff;
 }
@@ -84,12 +85,10 @@ fieldset[disabled] .btn-sample:active,
 .btn-sample[disabled].active,
 fieldset[disabled] .btn-sample.active {
 	background-color: #BF6217;
-	border-color: #F7F7F7;
 }
 
 .btn-sample .badge {
 	color: #BF6217;
-	background-color: #ffffff;
 }
 
 /************* MENU NAVEGACION ************/
@@ -97,6 +96,7 @@ fieldset[disabled] .btn-sample.active {
 	background: rgba(0, 0, 0, 0.025);
 	backdrop-filter: blur(4px);
 }
+
 .navbar-nav a {
 	font-size: 20px;
 	text-transform: uppercase;
@@ -111,8 +111,8 @@ fieldset[disabled] .btn-sample.active {
 	letter-spacing: 2px;
 }
 
-.navbar-brand{
-	margin-right:0px;
+.navbar-brand {
+	margin-right: 0px;
 }
 
 .navbar-light .navbar-brand:focus,
@@ -136,9 +136,7 @@ fieldset[disabled] .btn-sample.active {
 	background: #fff;
 }
 
-
 /*************  CAROUSEL ****************/
-
 .carousel-item {
 	height: 100vh;
 	min-height: 300px;
@@ -156,7 +154,9 @@ fieldset[disabled] .btn-sample.active {
 	background-image: url(img/gym3.jpg);
 }
 
-.bg-1, .bg-2, .bg-3 {
+.bg-1,
+.bg-2,
+.bg-3 {
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -173,7 +173,7 @@ fieldset[disabled] .btn-sample.active {
 	letter-spacing: 2px;
 	margin-top: 25px;
 	font-family: 'Moon Dance', cursive;
-	color:#bf6217;
+	color: #bf6217;
 }
 
 .carousel-caption p {
@@ -211,7 +211,6 @@ fieldset[disabled] .btn-sample.active {
 .carousel-indicators button {
 	width: 100px !important;
 }
-
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.navbar-nav {
@@ -272,16 +271,10 @@ fieldset[disabled] .btn-sample.active {
 	.navbar-collapse {
 		background: #fff;
 	}
-
-
 }
 
 /* TITULOS DE LAS SECCIONES */
-
-.section-title {
-	padding-bottom:40px;
-}
-.section-title span{                             /*Texto alineado, fuente propia, color y márgenes */
+.section-title span {                                    /*Texto alineado, fuente propia, color y márgenes */
 	font-family: 'Moon Dance', cursive;
 	text-align: center;
 	color: #bf6217;
@@ -289,13 +282,12 @@ fieldset[disabled] .btn-sample.active {
 	margin-bottom: 40px;
 }
 
-.section-title h1{
-	font-family: 'Moon Dance', cursive;			/*Texto alineado, fuente propia, color y márgenes */
+.section-title h1 {
+	font-family: 'Montserrat', sans-serif;                   /*Texto alineado, fuente propia, color y márgenes */
 	color: white;
-	font-size: 40px;
+	font-size: 30px;
 	margin-bottom: 40px;
 }
-
 
 /************ SOBRE NOSOTROS ****************/
 .choseus-section {
@@ -337,7 +329,6 @@ fieldset[disabled] .btn-sample.active {
 	margin-top: 24px;
 	margin-bottom: 16px;
 }
-
 
 /*********** SECCIÓN CLASES *****************/
 .classes-section {
@@ -418,19 +409,18 @@ fieldset[disabled] .btn-sample.active {
 }
 
 /**************** GALERIA DE FOTOS ********************/
-.gallery-section{
-	padding-top:80px;
+.gallery-section {
+	padding-top: 80px;
 	padding-bottom: 80px;
 }
 
 .foto {
-	opacity:1;
+	opacity: 1;
 }
 
-.foto:hover{
+.foto:hover {
 	cursor: pointer;
-	opacity:0.9;
-
+	opacity: 0.9;
 }
 
 /****************** SECCIÓN PRECIOS ********************/
@@ -465,11 +455,11 @@ fieldset[disabled] .btn-sample.active {
 	box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.1);
 	transform: scale(1.04);
 	background-color: white;
-	color:black;
+	color: black;
 }
 
 .tarjeta:hover {
-	color:black;
+	color: black;
 }
 
 .single-price::before {
@@ -515,7 +505,7 @@ fieldset[disabled] .btn-sample.active {
 .single-price .value {
 	width: 100%;
 	height: 100%;
-	color:white;
+	color: white;
 	border: 4px solid #bf6217;
 	border-top: none;
 	border-bottom: none;
@@ -523,7 +513,8 @@ fieldset[disabled] .btn-sample.active {
 	position: relative;
 }
 
-.single-price .value::before, .single-price .value::after {
+.single-price .value::before,
+.single-price .value::after {
 	content: "";
 	width: 97px;
 	height: 97px;
@@ -545,12 +536,14 @@ fieldset[disabled] .btn-sample.active {
 	top: auto;
 	bottom: -48px;
 }
+
 .single-price .currency {
 	display: inline-block;
 	font-size: 30px;
 	margin-top: 7px;
 	vertical-align: top;
 }
+
 .single-price .amount {
 	display: inline-block;
 	font-size: 40px;
@@ -567,11 +560,11 @@ fieldset[disabled] .btn-sample.active {
 }
 
 .single-price:hover .amount {
-	color:black;
+	color: black;
 }
 
 .single-price:hover .month {
-	color:black;
+	color: black;
 }
 
 .single-price .month {
@@ -589,14 +582,14 @@ fieldset[disabled] .btn-sample.active {
 }
 
 .single-price .deals li {
-	color:white;
+	color: white;
 	padding: 7px 0;
 	font-size: 20px;
 	position: relative;
 }
 
 .single-price:hover .deals li {
-	color:black;
+	color: black;
 	padding: 7px 0;
 	font-size: 20px;
 	position: relative;
@@ -607,139 +600,88 @@ fieldset[disabled] .btn-sample.active {
 		margin-bottom: 30px;
 	}
 }
+
 @media only screen and (max-width: 767px) {
 	.single-price:before {
 		transform: skewY(-15deg);
 	}
+
 	.single-price .title {
 		font-size: 22px;
 	}
 }
 
-
 /************ EQUIPO *******************/
-.team-section {
-	background: #151515;
+.card-container {
+	padding: 100px 0px;
+	-webkit-perspective: 1000;
 }
 
-.team-section.team-page {
-	padding-bottom: 70px;
-}
-
-.team-section.team-page .ts-item {
-	margin-bottom: 30px;
-}
-
-.team-section.team-page .ts-item:hover .ts_text {
-	bottom: -30px;
-}
-
-.team-section.team-page .ts-item .tt_social {
-	-webkit-transform: skewY(5deg);
-	-ms-transform: skewY(5deg);
-	transform: skewY(5deg);
-	margin-top: 13px;
-}
-
-.team-section.team-page .ts-item .tt_social a {
-	font-size: 14px;
-	color: #c4c4c4;
-	margin-right: 10px;
-}
-
-.team-section.team-page .ts-item .tt_social a:last-child {
-	margin-right: 0;
-}
-
-.team-title .section-title {
-	text-align: left;
-	float: left;
-}
-
-.primary-btn.appoinment-btn {
-	background: transparent;
-	border: 2px solid #bf6217;
-	float: right;
-	margin-top: 10px;
-}
-
-.ts-slider .col-lg-4 {
-	max-width: 100%;
-}
-
-.ts-slider.owl-carousel .owl-dots {
-	text-align: center;
-	margin-top: 30px;
-}
-
-.ts-slider.owl-carousel .owl-dots button {
-	height: 4px;
-	width: 20px;
-	background: #5c5c5c;
-	margin-right: 15px;
-	-webkit-transform: skewY(-5deg);
-	-ms-transform: skewY(-5deg);
-	transform: skewY(-5deg);
-}
-
-.ts-slider.owl-carousel .owl-dots button.active {
-	background: #bf6217;
-}
-
-.ts-slider.owl-carousel .owl-dots button:last-child {
-	margin-right: 0;
-}
-
-.ts-item {
-	width:400px;
-	height: 450px;
-	position: relative;
+.profile-card-2 {
+	max-width: 300px;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+	background-position: center;
 	overflow: hidden;
+	position: relative;
+	margin: 10px auto;
+	cursor: pointer;
+	padding-top: 5%;
 }
 
-.ts-item:hover .ts_text {
-	bottom: -35px;
+.profile-card-2 img {
+	transition: all linear 0.25s;
 }
 
-.ts-item:hover {
+.profile-card-2 .profile-name {
+	position: absolute;
+	left: 30px;
+	bottom: 70px;
+	font-size: 34px;
+	color: white;
+	text-shadow: 0px 0px 20px rgba(239, 232, 232, 0.5);
+	font-weight: bold;
+	transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-icons {
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+	color: #FFF;
+	transition: all linear 0.25s;
+}
+
+.fa {
+	color: white;
+}
+
+.profile-card-2 .profile-username {
+	position: absolute;
+	bottom: 50px;
+	left: 30px;
+	color: #FFF;
+	font-size: 17px;
+	transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-icons .fa {
+	margin: 5px;
+}
+
+.profile-card-2:hover img {
 	filter: grayscale(100%);
 }
 
-.ts-item .ts_text {
-	padding: 40px 0 60px;
-	text-align: center;
-	background: #0a0a0a;
-	border-top: 4px solid #464646;
-	-webkit-transform: skewY(-5deg);
-	-ms-transform: skewY(-5deg);
-	transform: skewY(-5deg);
-	position: absolute;
-	left: 0;
-	bottom: -250px;
-	width: 100%;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
+.profile-card-2:hover .profile-name {
+	bottom: 80px;
 }
 
-.ts-item .ts_text h4 {
-	color: #ffffff;
-	font-weight: 600;
-	margin-bottom: 14px;
-	-webkit-transform: skewY(5deg);
-	-ms-transform: skewY(5deg);
-	transform: skewY(5deg);
+.profile-card-2:hover .profile-username {
+	bottom: 60px;
 }
 
-.ts-item .ts_text span {
-	display: block;
-	font-size: 12px;
-	font-weight: 700;
-	color: #aaaaaa;
-	text-transform: uppercase;
-	-webkit-transform: skewY(5deg);
-	-ms-transform: skewY(5deg);
-	transform: skewY(5deg);
+.profile-card-2:hover .profile-icons {
+	right: 40px;
 }
 
 /************** SECCION CONTACTO *********************/
@@ -908,139 +850,11 @@ fieldset[disabled] .btn-sample.active {
 	width: 100%;
 }
 
-/****************** FOOTER ******************/
-footer {
-	padding: 7em 0;
-}
-
-.footer-10 {
-	background: #222222;
-	padding: 0 0 4em 0;
-}
-
-.footer-10 .border-top,
-.footer-10 .border-bottom {
-	border-color: rgba(255, 255, 255, 0.1) !important;
-}
-
-.footer-10 .footer-heading {
-	font-size: 18px;
-	color: #fff;
-	margin-bottom: 30px;
-}
-
-.footer-10 p {
-	color: rgba(255, 255, 255, 0.3);
-}
-
-.footer-10 a {
-	color: #bf6217;
-}
-
-.footer-10 .con.con-1 {
-	background: #1e1e1e;
-}
-
-.footer-10 .con.con-2 {
-	background: #1c1c1c;
-}
-
-.footer-10 .con.con-3 {
-	background: #252525;
-}
-
-.footer-10 .list-unstyled li a {
-	color: rgba(255, 255, 255, 0.2);
-}
-
-.footer-10 .list-unstyled li a:hover {
-	color: #fff;
-}
-
-.footer-10 .con-info .icon {
-	width: 50px;
-	height: 50px;
+/*******FOOTER********/                   /*AÑADIMOS COLOR DE FONDO DE FOOTER Y AÑADIMOS PADDING*/
+.color-footer {
 	background: #bf6217;
-	border-radius: 50%;
-	margin: 0 auto;
-	margin-bottom: 10px;
 }
 
-.footer-10 .con-info .icon span {
-	color: #fff;
-	font-size: 24px;
-}
-
-.footer-10 .con-info span {
-	color: rgba(255, 255, 255, 0.8);
-}
-
-.footer-10 .subscribe-form .form-group {
-	position: relative;
-	margin-bottom: 0;
-	border-radius: 0;
-}
-
-.footer-10 .subscribe-form .form-group input {
-	background: white !important;
-	border: none !important;
-	outline: none !important;
-	color: rgba(0, 0, 0, 0.3) !important;
-	font-size: 16px;
-	border-radius: 0;
-}
-
-.footer-10 .subscribe-form .form-group input::-webkit-input-placeholder {
-	/* Chrome/Opera/Safari */
-	color: rgba(0, 0, 0, 0.3) !important;
-}
-
-.footer-10 .subscribe-form .form-group input::-moz-placeholder {
-	/* Firefox 19+ */
-	color: rgba(0, 0, 0, 0.3) !important;
-}
-
-.footer-10 .subscribe-form .form-group input:-ms-input-placeholder {
-	/* IE 10+ */
-	color: rgba(0, 0, 0, 0.3) !important;
-}
-
-.footer-10 .subscribe-form .form-group input:-moz-placeholder {
-	/* Firefox 18- */
-	color: rgba(0, 0, 0, 0.3) !important;
-}
-
-.footer-10 .subscribe-form .form-group input:focus {
-	outline: none !important;
-	-webkit-box-shadow: none;
-	box-shadow: none;
-}
-
-.footer-10 .subscribe-form .form-group .submit {
-	color: #fff !important;
-	display: block;
-	width: 130px;
-	height: 52px;
-	font-size: 16px;
-	background: #bf6217!important;
-	border: none;
-	border-radius: 0;
-}
-
-.footer-10 .subscribe-form .form-group .submit:hover,
-.footer-10 .subscribe-form .form-group .submit:focus {
-	text-decoration: none !important;
-	outline: none !important;
-}
-
-.footer-10 .subscribe-form .subheading {
-	display: inline-block;
-	margin-top: 5px;
-	color: rgba(255, 255, 255, 0.3);
-	font-size: 13px;
-}
-
-.footer-10 .ftco-footer-social li a {
-	background: rgba(255, 255, 255, 0.1);
-	color: #fff;
+.footer-row {
+	padding-top: 2%;
 }
