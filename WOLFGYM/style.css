@@ -1,5 +1,3 @@
-
-
 body {
 	font-family: montserrat;
 	background: #151515;
@@ -14,19 +12,95 @@ div.container-fluid{
 	padding-left: 0px;
 }
 
+/* CAMBIO COLOR DEL SCROLL */
+::-webkit-scrollbar{
+	width: 11px;
+	background: white;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+	width: 100%;
+	background: #BF6217;
+	border-radius: 2em;
+  }
+  
+  
+/* logo*/
 .logo {
-	width:30%;
+	width:30%;           /*Tamaño logo*/
 }
 
 .editar button{
 	margin-right: 20px;
 }
 
+.btn {
+	align-items: center;
+}
+
+.btn-sample {
+	color: #ffffff;
+	background-color: #BF6217;
+	border-radius: 10px;
+	font-size: 30px;
+	padding: 0.8%;
+}
+
+.btn-sample:hover {
+	font-size:31px;
+	transition:0.5s;
+	color: #BF6217;
+	background-color: #ffffff;
+}
+
+.btn-sample:hover,
+.btn-sample:focus,
+.btn-sample:active,
+.btn-sample.active,
+.open .dropdown-toggle.btn-sample {
+	color: #ffffff;
+	background-color: #9E5214;
+}
+
+.btn-sample:active,
+.btn-sample.active,
+.open .dropdown-toggle.btn-sample {
+	background-image: none;
+}
+
+.btn-sample.disabled,
+.btn-sample[disabled],
+fieldset[disabled] .btn-sample,
+.btn-sample.disabled:hover,
+.btn-sample[disabled]:hover,
+fieldset[disabled] .btn-sample:hover,
+.btn-sample.disabled:focus,
+.btn-sample[disabled]:focus,
+fieldset[disabled] .btn-sample:focus,
+.btn-sample.disabled:active,
+.btn-sample[disabled]:active,
+fieldset[disabled] .btn-sample:active,
+.btn-sample.disabled.active,
+.btn-sample[disabled].active,
+fieldset[disabled] .btn-sample.active {
+	background-color: #BF6217;
+	border-color: #F7F7F7;
+}
+
+.btn-sample .badge {
+	color: #BF6217;
+	background-color: #ffffff;
+}
+
+/************* MENU NAVEGACION ************/
+.navbar {
+	background: rgba(0, 0, 0, 0.025);
+	backdrop-filter: blur(4px);
+}
 .navbar-nav a {
 	font-size: 20px;
 	text-transform: uppercase;
 	font-weight: 700;
-	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .navbar-light .navbar-brand {
@@ -53,8 +127,6 @@ div.container-fluid{
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
 	color: #bf6217;
-	font-size:22px;
-	transition: 0.3s;
 }
 
 .navbar-toggler {
@@ -65,7 +137,7 @@ div.container-fluid{
 }
 
 
-/*  carousel */
+/*************  CAROUSEL ****************/
 
 .carousel-item {
 	height: 100vh;
@@ -84,9 +156,7 @@ div.container-fluid{
 	background-image: url(img/gym3.jpg);
 }
 
-.bg-1,
-.bg-2,
-.bg-3 {
+.bg-1, .bg-2, .bg-3 {
 	-webkit-background-size: cover;
 	background-size: cover;
 }
@@ -96,8 +166,6 @@ div.container-fluid{
 	position: absolute;
 	z-index: 2;
 }
-
-
 
 .carousel-caption h5 {
 	font-size: 85px;
@@ -111,10 +179,9 @@ div.container-fluid{
 .carousel-caption p {
 	width: 60%;
 	margin: auto;
-	font-size: 18px;
+	font-size: 25px;
 	line-height: 1.9;
 }
-
 
 .carousel-caption a {
 	text-transform: uppercase;
@@ -209,7 +276,12 @@ div.container-fluid{
 
 }
 
-.section-title span{
+/* TITULOS DE LAS SECCIONES */
+
+.section-title {
+	padding-bottom:40px;
+}
+.section-title span{                             /*Texto alineado, fuente propia, color y márgenes */
 	font-family: 'Moon Dance', cursive;
 	text-align: center;
 	color: #bf6217;
@@ -218,19 +290,14 @@ div.container-fluid{
 }
 
 .section-title h1{
-	font-family: 'Moon Dance', cursive;
+	font-family: 'Moon Dance', cursive;			/*Texto alineado, fuente propia, color y márgenes */
 	color: white;
 	font-size: 40px;
 	margin-bottom: 40px;
 }
 
 
-/* SOBRE NOSOTROS*/
-
-/*---------------------
-  ChoseUs Section
------------------------*/
-
+/************ SOBRE NOSOTROS ****************/
 .choseus-section {
 	background: #0a0a0a;
 	padding-top: 60px;
@@ -240,13 +307,11 @@ div.container-fluid{
 .cs-item {
 	text-align: center;
 	margin-bottom: 30px;
-	
 }
 
 .cs-item:hover span {
 	background: #bf6217;
 	color: #ffffff;
-	
 }
 
 .cs-item span {
@@ -274,10 +339,7 @@ div.container-fluid{
 }
 
 
-/*---------------------
-  Classes Section
------------------------*/
-
+/*********** SECCIÓN CLASES *****************/
 .classes-section {
 	background: #151515;
 	padding-bottom: 80px;
@@ -355,7 +417,7 @@ div.container-fluid{
 	bottom: 26px;
 }
 
-/* GALLLERY*/
+/**************** GALERIA DE FOTOS ********************/
 .gallery-section{
 	padding-top:80px;
 	padding-bottom: 80px;
@@ -371,7 +433,7 @@ div.container-fluid{
 
 }
 
-/* PRICING */
+/****************** SECCIÓN PRECIOS ********************/
 .pricing-section {
 	background: #151515;
 	padding-bottom: 80px;
@@ -406,7 +468,7 @@ div.container-fluid{
 	color:black;
 }
 
-.single-price a:hover{
+.tarjeta:hover {
 	color:black;
 }
 
@@ -434,6 +496,10 @@ div.container-fluid{
 	color: #fff;
 	text-transform: uppercase;
 	margin: 0;
+}
+
+.single-price:hover .title {
+	color: black;
 }
 
 .single-price .price-value {
@@ -500,6 +566,14 @@ div.container-fluid{
 	margin-top: -7px;
 }
 
+.single-price:hover .amount {
+	color:black;
+}
+
+.single-price:hover .month {
+	color:black;
+}
+
 .single-price .month {
 	display: block;
 	font-size: 16px;
@@ -521,6 +595,13 @@ div.container-fluid{
 	position: relative;
 }
 
+.single-price:hover .deals li {
+	color:black;
+	padding: 7px 0;
+	font-size: 20px;
+	position: relative;
+}
+
 @media only screen and (max-width: 990px) {
 	.single-price {
 		margin-bottom: 30px;
@@ -536,10 +617,7 @@ div.container-fluid{
 }
 
 
-/*---------------------
-  Team Section
------------------------*/
-
+/************ EQUIPO *******************/
 .team-section {
 	background: #151515;
 }
@@ -580,7 +658,7 @@ div.container-fluid{
 
 .primary-btn.appoinment-btn {
 	background: transparent;
-	border: 2px solid #f36100;
+	border: 2px solid #bf6217;
 	float: right;
 	margin-top: 10px;
 }
@@ -605,7 +683,7 @@ div.container-fluid{
 }
 
 .ts-slider.owl-carousel .owl-dots button.active {
-	background: #f36100;
+	background: #bf6217;
 }
 
 .ts-slider.owl-carousel .owl-dots button:last-child {
@@ -664,13 +742,11 @@ div.container-fluid{
 	transform: skewY(5deg);
 }
 
-/*---------------------
-  Contact Section
------------------------*/
-
+/************** SECCION CONTACTO *********************/
 .contact-section {
 	background: #151515;
 	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .section-title.contact-title {
@@ -685,7 +761,7 @@ div.container-fluid{
 
 .contact-widget .cw-text i {
 	font-size: 30px;
-	color: #f36100;
+	color: #bf6217;
 	display: inline-block;
 	height: 65px;
 	width: 65px;
@@ -820,9 +896,8 @@ div.container-fluid{
 	width: 100%;
 	border: none;
 	padding: 14px 0 12px;
-	background: #f36100;
+	background: #bf6217;
 }
-
 
 .map {
 	height: 550px;
@@ -833,7 +908,7 @@ div.container-fluid{
 	width: 100%;
 }
 
-/* FOOTER */
+/****************** FOOTER ******************/
 footer {
 	padding: 7em 0;
 }
