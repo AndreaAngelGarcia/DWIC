@@ -14,23 +14,19 @@ module.exports = {
   theme: {
     extend: {
       keyframes: {
-        rotateGear: {
-          '0%': { transform: 'rotate(0deg)' },
-          '100%': { transform: 'rotate(360deg)' },
-        },
         fromBellow: {
-          '0%': { transform: 'translateY(0px)' },
-          '50%': {transform: 'translateY(56px)'},
+          '0%': { transform: 'translateY(0px)'  },
+          '50%': {transform: 'translateY(56px)' },
           '100%': { transform: 'translateY(0px)' },
         }
       },
+      animation: {
+        'spin-slow': 'spin 2s linear infinite',
+        'from-bellow': 'fromBellow 500ms linear',
+      },
       colors: {
         "azulClaro": "#37bcf9"
-      },
-      animation: {
-        'rotate-gear': 'rotateGear ',
-        'from-bellow': 'fromBellow 500ms linear',
-      }
+      }     
     },
   }  
 }

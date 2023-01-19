@@ -30712,16 +30712,6 @@ body {
   }
 }
 
-@keyframes rotateGear {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 @keyframes fromBellow {
   0% {
     transform: translateY(0px);
@@ -30756,12 +30746,12 @@ body {
   animation: bounce 1s infinite;
 }
 
-.animate-rotate-gear {
-  animation: rotateGear spin 3s linear infinite;
+.animate-spin-slow {
+  animation: spin 2s linear infinite;
 }
 
 .animate-from-bellow {
-  animation: fromBellow translate-y-56 500ms linear;
+  animation: fromBellow 500ms linear;
 }
 
 .group:hover .group-hover\:animate-none {
@@ -30784,12 +30774,12 @@ body {
   animation: bounce 1s infinite;
 }
 
-.group:hover .group-hover\:animate-rotate-gear {
-  animation: rotateGear spin 3s linear infinite;
+.group:hover .group-hover\:animate-spin-slow {
+  animation: spin 2s linear infinite;
 }
 
 .group:hover .group-hover\:animate-from-bellow {
-  animation: fromBellow translate-y-56 500ms linear;
+  animation: fromBellow 500ms linear;
 }
 
 .hover\:animate-none:hover {
@@ -30812,12 +30802,12 @@ body {
   animation: bounce 1s infinite;
 }
 
-.hover\:animate-rotate-gear:hover {
-  animation: rotateGear spin 3s linear infinite;
+.hover\:animate-spin-slow:hover {
+  animation: spin 2s linear infinite;
 }
 
 .hover\:animate-from-bellow:hover {
-  animation: fromBellow translate-y-56 500ms linear;
+  animation: fromBellow 500ms linear;
 }
 
 @media (min-width: 640px) {
@@ -60867,12 +60857,12 @@ body {
     animation: bounce 1s infinite;
   }
 
-  .sm\:animate-rotate-gear {
-    animation: rotateGear spin 3s linear infinite;
+  .sm\:animate-spin-slow {
+    animation: spin 2s linear infinite;
   }
 
   .sm\:animate-from-bellow {
-    animation: fromBellow translate-y-56 500ms linear;
+    animation: fromBellow 500ms linear;
   }
 
   .group:hover .sm\:group-hover\:animate-none {
@@ -60895,12 +60885,12 @@ body {
     animation: bounce 1s infinite;
   }
 
-  .group:hover .sm\:group-hover\:animate-rotate-gear {
-    animation: rotateGear spin 3s linear infinite;
+  .group:hover .sm\:group-hover\:animate-spin-slow {
+    animation: spin 2s linear infinite;
   }
 
   .group:hover .sm\:group-hover\:animate-from-bellow {
-    animation: fromBellow translate-y-56 500ms linear;
+    animation: fromBellow 500ms linear;
   }
 
   .sm\:hover\:animate-none:hover {
@@ -60923,12 +60913,12 @@ body {
     animation: bounce 1s infinite;
   }
 
-  .sm\:hover\:animate-rotate-gear:hover {
-    animation: rotateGear spin 3s linear infinite;
+  .sm\:hover\:animate-spin-slow:hover {
+    animation: spin 2s linear infinite;
   }
 
   .sm\:hover\:animate-from-bellow:hover {
-    animation: fromBellow translate-y-56 500ms linear;
+    animation: fromBellow 500ms linear;
   }
 }
 
@@ -90979,12 +90969,12 @@ body {
     animation: bounce 1s infinite;
   }
 
-  .md\:animate-rotate-gear {
-    animation: rotateGear spin 3s linear infinite;
+  .md\:animate-spin-slow {
+    animation: spin 2s linear infinite;
   }
 
   .md\:animate-from-bellow {
-    animation: fromBellow translate-y-56 500ms linear;
+    animation: fromBellow 500ms linear;
   }
 
   .group:hover .md\:group-hover\:animate-none {
@@ -91007,12 +90997,12 @@ body {
     animation: bounce 1s infinite;
   }
 
-  .group:hover .md\:group-hover\:animate-rotate-gear {
-    animation: rotateGear spin 3s linear infinite;
+  .group:hover .md\:group-hover\:animate-spin-slow {
+    animation: spin 2s linear infinite;
   }
 
   .group:hover .md\:group-hover\:animate-from-bellow {
-    animation: fromBellow translate-y-56 500ms linear;
+    animation: fromBellow 500ms linear;
   }
 
   .md\:hover\:animate-none:hover {
@@ -91035,12 +91025,12 @@ body {
     animation: bounce 1s infinite;
   }
 
-  .md\:hover\:animate-rotate-gear:hover {
-    animation: rotateGear spin 3s linear infinite;
+  .md\:hover\:animate-spin-slow:hover {
+    animation: spin 2s linear infinite;
   }
 
   .md\:hover\:animate-from-bellow:hover {
-    animation: fromBellow translate-y-56 500ms linear;
+    animation: fromBellow 500ms linear;
   }
 }
 
@@ -121091,12 +121081,12 @@ body {
     animation: bounce 1s infinite;
   }
 
-  .lg\:animate-rotate-gear {
-    animation: rotateGear spin 3s linear infinite;
+  .lg\:animate-spin-slow {
+    animation: spin 2s linear infinite;
   }
 
   .lg\:animate-from-bellow {
-    animation: fromBellow translate-y-56 500ms linear;
+    animation: fromBellow 500ms linear;
   }
 
   .group:hover .lg\:group-hover\:animate-none {
@@ -121119,12 +121109,12 @@ body {
     animation: bounce 1s infinite;
   }
 
-  .group:hover .lg\:group-hover\:animate-rotate-gear {
-    animation: rotateGear spin 3s linear infinite;
+  .group:hover .lg\:group-hover\:animate-spin-slow {
+    animation: spin 2s linear infinite;
   }
 
   .group:hover .lg\:group-hover\:animate-from-bellow {
-    animation: fromBellow translate-y-56 500ms linear;
+    animation: fromBellow 500ms linear;
   }
 
   .lg\:hover\:animate-none:hover {
@@ -121147,12 +121137,12 @@ body {
     animation: bounce 1s infinite;
   }
 
-  .lg\:hover\:animate-rotate-gear:hover {
-    animation: rotateGear spin 3s linear infinite;
+  .lg\:hover\:animate-spin-slow:hover {
+    animation: spin 2s linear infinite;
   }
 
   .lg\:hover\:animate-from-bellow:hover {
-    animation: fromBellow translate-y-56 500ms linear;
+    animation: fromBellow 500ms linear;
   }
 }
 
@@ -151203,12 +151193,12 @@ body {
     animation: bounce 1s infinite;
   }
 
-  .xl\:animate-rotate-gear {
-    animation: rotateGear spin 3s linear infinite;
+  .xl\:animate-spin-slow {
+    animation: spin 2s linear infinite;
   }
 
   .xl\:animate-from-bellow {
-    animation: fromBellow translate-y-56 500ms linear;
+    animation: fromBellow 500ms linear;
   }
 
   .group:hover .xl\:group-hover\:animate-none {
@@ -151231,12 +151221,12 @@ body {
     animation: bounce 1s infinite;
   }
 
-  .group:hover .xl\:group-hover\:animate-rotate-gear {
-    animation: rotateGear spin 3s linear infinite;
+  .group:hover .xl\:group-hover\:animate-spin-slow {
+    animation: spin 2s linear infinite;
   }
 
   .group:hover .xl\:group-hover\:animate-from-bellow {
-    animation: fromBellow translate-y-56 500ms linear;
+    animation: fromBellow 500ms linear;
   }
 
   .xl\:hover\:animate-none:hover {
@@ -151259,12 +151249,12 @@ body {
     animation: bounce 1s infinite;
   }
 
-  .xl\:hover\:animate-rotate-gear:hover {
-    animation: rotateGear spin 3s linear infinite;
+  .xl\:hover\:animate-spin-slow:hover {
+    animation: spin 2s linear infinite;
   }
 
   .xl\:hover\:animate-from-bellow:hover {
-    animation: fromBellow translate-y-56 500ms linear;
+    animation: fromBellow 500ms linear;
   }
 }
 
@@ -181315,12 +181305,12 @@ body {
     animation: bounce 1s infinite;
   }
 
-  .\32xl\:animate-rotate-gear {
-    animation: rotateGear spin 3s linear infinite;
+  .\32xl\:animate-spin-slow {
+    animation: spin 2s linear infinite;
   }
 
   .\32xl\:animate-from-bellow {
-    animation: fromBellow translate-y-56 500ms linear;
+    animation: fromBellow 500ms linear;
   }
 
   .group:hover .\32xl\:group-hover\:animate-none {
@@ -181343,12 +181333,12 @@ body {
     animation: bounce 1s infinite;
   }
 
-  .group:hover .\32xl\:group-hover\:animate-rotate-gear {
-    animation: rotateGear spin 3s linear infinite;
+  .group:hover .\32xl\:group-hover\:animate-spin-slow {
+    animation: spin 2s linear infinite;
   }
 
   .group:hover .\32xl\:group-hover\:animate-from-bellow {
-    animation: fromBellow translate-y-56 500ms linear;
+    animation: fromBellow 500ms linear;
   }
 
   .\32xl\:hover\:animate-none:hover {
@@ -181371,11 +181361,11 @@ body {
     animation: bounce 1s infinite;
   }
 
-  .\32xl\:hover\:animate-rotate-gear:hover {
-    animation: rotateGear spin 3s linear infinite;
+  .\32xl\:hover\:animate-spin-slow:hover {
+    animation: spin 2s linear infinite;
   }
 
   .\32xl\:hover\:animate-from-bellow:hover {
-    animation: fromBellow translate-y-56 500ms linear;
+    animation: fromBellow 500ms linear;
   }
 }
