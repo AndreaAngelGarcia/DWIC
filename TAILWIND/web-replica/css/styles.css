@@ -546,9 +546,15 @@ video {
   height: auto;
 }
 
+body {
+  background-image: url('../img/pattern.png');
+  margin: 0;
+  padding: 0;
+}
+
 /*FUENTES*/
 
-@font-face{
+@font-face {
   font-family: "TrebuchetMS";
 
   src: url('fonts/TrebuchetMS.ttf');
@@ -558,10 +564,25 @@ video {
   font-style: normal;
 }
 
-@font-face{
+@font-face {
   font-family: "BebasNeue";
 
   src: url('fonts/BebasNeue.otf');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "WebSymbolsRegular";
+
+  src: url('fonts/websymbols-regular-webfont.eot');
+
+  src: url('fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+            url('fonts/websymbols-regular-webfont.woff') format('woff'),
+            url('fonts/websymbols-regular-webfont.ttf') format('truetype'),
+            url('fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
 
   font-weight: normal;
 
@@ -572,23 +593,12 @@ video {
   font-family: "BebasNeue";
 }
 
-@font-face{
+.WebSymbolsRegular {
   font-family: "WebSymbolsRegular";
-
-  src: url('fonts/websymbols-regular-webfont.eot');
-
-  src: url('fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/websymbols-regular-webfont.woff') format('woff'),
-         url('fonts/websymbols-regular-webfont.ttf') format('truetype'),
-         url('fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
-
-  font-weight: normal;
-
-  font-style: normal;
 }
 
-.gear, .icon{
-  font-family: "WebSymbolsRegular";
+.TrebuchetMS{
+  font-family: "TrebuchetMS"
 }
 
 .container {
@@ -623,6 +633,47 @@ video {
   .container {
     max-width: 1536px;
   }
+}
+
+.menu ul li {
+  cursor: pointer;
+  margin: 1.25rem;
+  letter-spacing: 0.05em;
+}
+
+@media (min-width: 640px) {
+  .menu ul li {
+    display: inline-block;
+  }
+}
+
+.menu ul li a {
+  display: block;
+}
+
+.menu ul li a:hover {
+  --tw-text-opacity: 1;
+  color: rgba(55, 188, 249, var(--tw-text-opacity));
+}
+
+.menu ul li a {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.menu ul li a:hover {
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+}
+
+.menu ul li a {
+  transition-duration: 200ms;
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {
@@ -30661,6 +30712,30 @@ video {
   }
 }
 
+@keyframes rotateGear {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fromBellow {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(56px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .animate-none {
   animation: none;
 }
@@ -30679,6 +30754,14 @@ video {
 
 .animate-bounce {
   animation: bounce 1s infinite;
+}
+
+.animate-rotate-gear {
+  animation: rotateGear spin 3s linear infinite;
+}
+
+.animate-from-bellow {
+  animation: fromBellow translate-y-56 500ms linear;
 }
 
 .group:hover .group-hover\:animate-none {
@@ -30701,6 +30784,14 @@ video {
   animation: bounce 1s infinite;
 }
 
+.group:hover .group-hover\:animate-rotate-gear {
+  animation: rotateGear spin 3s linear infinite;
+}
+
+.group:hover .group-hover\:animate-from-bellow {
+  animation: fromBellow translate-y-56 500ms linear;
+}
+
 .hover\:animate-none:hover {
   animation: none;
 }
@@ -30719,6 +30810,14 @@ video {
 
 .hover\:animate-bounce:hover {
   animation: bounce 1s infinite;
+}
+
+.hover\:animate-rotate-gear:hover {
+  animation: rotateGear spin 3s linear infinite;
+}
+
+.hover\:animate-from-bellow:hover {
+  animation: fromBellow translate-y-56 500ms linear;
 }
 
 @media (min-width: 640px) {
@@ -60768,6 +60867,14 @@ video {
     animation: bounce 1s infinite;
   }
 
+  .sm\:animate-rotate-gear {
+    animation: rotateGear spin 3s linear infinite;
+  }
+
+  .sm\:animate-from-bellow {
+    animation: fromBellow translate-y-56 500ms linear;
+  }
+
   .group:hover .sm\:group-hover\:animate-none {
     animation: none;
   }
@@ -60788,6 +60895,14 @@ video {
     animation: bounce 1s infinite;
   }
 
+  .group:hover .sm\:group-hover\:animate-rotate-gear {
+    animation: rotateGear spin 3s linear infinite;
+  }
+
+  .group:hover .sm\:group-hover\:animate-from-bellow {
+    animation: fromBellow translate-y-56 500ms linear;
+  }
+
   .sm\:hover\:animate-none:hover {
     animation: none;
   }
@@ -60806,6 +60921,14 @@ video {
 
   .sm\:hover\:animate-bounce:hover {
     animation: bounce 1s infinite;
+  }
+
+  .sm\:hover\:animate-rotate-gear:hover {
+    animation: rotateGear spin 3s linear infinite;
+  }
+
+  .sm\:hover\:animate-from-bellow:hover {
+    animation: fromBellow translate-y-56 500ms linear;
   }
 }
 
@@ -90856,6 +90979,14 @@ video {
     animation: bounce 1s infinite;
   }
 
+  .md\:animate-rotate-gear {
+    animation: rotateGear spin 3s linear infinite;
+  }
+
+  .md\:animate-from-bellow {
+    animation: fromBellow translate-y-56 500ms linear;
+  }
+
   .group:hover .md\:group-hover\:animate-none {
     animation: none;
   }
@@ -90876,6 +91007,14 @@ video {
     animation: bounce 1s infinite;
   }
 
+  .group:hover .md\:group-hover\:animate-rotate-gear {
+    animation: rotateGear spin 3s linear infinite;
+  }
+
+  .group:hover .md\:group-hover\:animate-from-bellow {
+    animation: fromBellow translate-y-56 500ms linear;
+  }
+
   .md\:hover\:animate-none:hover {
     animation: none;
   }
@@ -90894,6 +91033,14 @@ video {
 
   .md\:hover\:animate-bounce:hover {
     animation: bounce 1s infinite;
+  }
+
+  .md\:hover\:animate-rotate-gear:hover {
+    animation: rotateGear spin 3s linear infinite;
+  }
+
+  .md\:hover\:animate-from-bellow:hover {
+    animation: fromBellow translate-y-56 500ms linear;
   }
 }
 
@@ -120944,6 +121091,14 @@ video {
     animation: bounce 1s infinite;
   }
 
+  .lg\:animate-rotate-gear {
+    animation: rotateGear spin 3s linear infinite;
+  }
+
+  .lg\:animate-from-bellow {
+    animation: fromBellow translate-y-56 500ms linear;
+  }
+
   .group:hover .lg\:group-hover\:animate-none {
     animation: none;
   }
@@ -120964,6 +121119,14 @@ video {
     animation: bounce 1s infinite;
   }
 
+  .group:hover .lg\:group-hover\:animate-rotate-gear {
+    animation: rotateGear spin 3s linear infinite;
+  }
+
+  .group:hover .lg\:group-hover\:animate-from-bellow {
+    animation: fromBellow translate-y-56 500ms linear;
+  }
+
   .lg\:hover\:animate-none:hover {
     animation: none;
   }
@@ -120982,6 +121145,14 @@ video {
 
   .lg\:hover\:animate-bounce:hover {
     animation: bounce 1s infinite;
+  }
+
+  .lg\:hover\:animate-rotate-gear:hover {
+    animation: rotateGear spin 3s linear infinite;
+  }
+
+  .lg\:hover\:animate-from-bellow:hover {
+    animation: fromBellow translate-y-56 500ms linear;
   }
 }
 
@@ -151032,6 +151203,14 @@ video {
     animation: bounce 1s infinite;
   }
 
+  .xl\:animate-rotate-gear {
+    animation: rotateGear spin 3s linear infinite;
+  }
+
+  .xl\:animate-from-bellow {
+    animation: fromBellow translate-y-56 500ms linear;
+  }
+
   .group:hover .xl\:group-hover\:animate-none {
     animation: none;
   }
@@ -151052,6 +151231,14 @@ video {
     animation: bounce 1s infinite;
   }
 
+  .group:hover .xl\:group-hover\:animate-rotate-gear {
+    animation: rotateGear spin 3s linear infinite;
+  }
+
+  .group:hover .xl\:group-hover\:animate-from-bellow {
+    animation: fromBellow translate-y-56 500ms linear;
+  }
+
   .xl\:hover\:animate-none:hover {
     animation: none;
   }
@@ -151070,6 +151257,14 @@ video {
 
   .xl\:hover\:animate-bounce:hover {
     animation: bounce 1s infinite;
+  }
+
+  .xl\:hover\:animate-rotate-gear:hover {
+    animation: rotateGear spin 3s linear infinite;
+  }
+
+  .xl\:hover\:animate-from-bellow:hover {
+    animation: fromBellow translate-y-56 500ms linear;
   }
 }
 
@@ -181120,6 +181315,14 @@ video {
     animation: bounce 1s infinite;
   }
 
+  .\32xl\:animate-rotate-gear {
+    animation: rotateGear spin 3s linear infinite;
+  }
+
+  .\32xl\:animate-from-bellow {
+    animation: fromBellow translate-y-56 500ms linear;
+  }
+
   .group:hover .\32xl\:group-hover\:animate-none {
     animation: none;
   }
@@ -181138,6 +181341,14 @@ video {
 
   .group:hover .\32xl\:group-hover\:animate-bounce {
     animation: bounce 1s infinite;
+  }
+
+  .group:hover .\32xl\:group-hover\:animate-rotate-gear {
+    animation: rotateGear spin 3s linear infinite;
+  }
+
+  .group:hover .\32xl\:group-hover\:animate-from-bellow {
+    animation: fromBellow translate-y-56 500ms linear;
   }
 
   .\32xl\:hover\:animate-none:hover {
@@ -181159,5 +181370,12 @@ video {
   .\32xl\:hover\:animate-bounce:hover {
     animation: bounce 1s infinite;
   }
-}
 
+  .\32xl\:hover\:animate-rotate-gear:hover {
+    animation: rotateGear spin 3s linear infinite;
+  }
+
+  .\32xl\:hover\:animate-from-bellow:hover {
+    animation: fromBellow translate-y-56 500ms linear;
+  }
+}

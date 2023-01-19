@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+    body {
+        background-image: url('../img/pattern.png');
+        margin: 0;
+        padding: 0;
+    }
 
     /*FUENTES*/
     @font-face {
@@ -19,10 +24,6 @@
         font-style: normal;
     }
 
-    .bebas {
-        font-family: "BebasNeue";
-    }
-
     @font-face {
         font-family: "WebSymbolsRegular";
         src: url('fonts/websymbols-regular-webfont.eot');
@@ -34,9 +35,24 @@
         font-style: normal;
     }
 
-    .gear,
-    .icon {
-        font-family: "WebSymbolsRegular";
+    .bebas {
+        font-family: "BebasNeue";
     }
 
+    .WebSymbolsRegular {
+        font-family: "WebSymbolsRegular";
+    }
+    .TrebuchetMS{
+        font-family: "TrebuchetMS"
+    }
+
+    @layer components {
+        .menu ul li {
+            @apply sm:inline-block m-5 tracking-wider cursor-pointer;
+        }
+
+        .menu ul li a {
+            @apply block hover:text-azulClaro hover:scale-125 transform duration-200;
+        }
+    }
 }
