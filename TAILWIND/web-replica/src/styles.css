@@ -47,11 +47,11 @@
     }
 
     @layer components {
-        .menu ul li {
+        .menu  ul .item{
             @apply sm:inline-block m-5 tracking-wider cursor-pointer;
         }
 
-        .menu ul li a {
+        .menu ul .item a {
             @apply block hover:text-azulClaro hover:scale-125 transform duration-200;
         }
     }

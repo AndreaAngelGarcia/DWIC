@@ -635,28 +635,28 @@ body {
   }
 }
 
-.menu ul li {
+.menu  ul .item{
   cursor: pointer;
   margin: 1.25rem;
   letter-spacing: 0.05em;
 }
 
 @media (min-width: 640px) {
-  .menu ul li {
+  .menu  ul .item {
     display: inline-block;
   }
 }
 
-.menu ul li a {
+.menu ul .item a {
   display: block;
 }
 
-.menu ul li a:hover {
+.menu ul .item a:hover {
   --tw-text-opacity: 1;
   color: rgba(55, 188, 249, var(--tw-text-opacity));
 }
 
-.menu ul li a {
+.menu ul .item a {
   --tw-translate-x: 0;
   --tw-translate-y: 0;
   --tw-rotate: 0;
@@ -667,12 +667,12 @@ body {
   transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.menu ul li a:hover {
+.menu ul .item a:hover {
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
 }
 
-.menu ul li a {
+.menu ul .item a {
   transition-duration: 200ms;
 }
 
@@ -30726,6 +30726,26 @@ body {
   }
 }
 
+@keyframes rotateGear {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    transform: translateX(56px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
 .animate-none {
   animation: none;
 }
@@ -30752,6 +30772,10 @@ body {
 
 .animate-from-bellow {
   animation: fromBellow 500ms linear;
+}
+
+.animate-from-right {
+  animation: fromRight 300ms linear;
 }
 
 .group:hover .group-hover\:animate-none {
@@ -30782,6 +30806,10 @@ body {
   animation: fromBellow 500ms linear;
 }
 
+.group:hover .group-hover\:animate-from-right {
+  animation: fromRight 300ms linear;
+}
+
 .hover\:animate-none:hover {
   animation: none;
 }
@@ -30808,6 +30836,10 @@ body {
 
 .hover\:animate-from-bellow:hover {
   animation: fromBellow 500ms linear;
+}
+
+.hover\:animate-from-right:hover {
+  animation: fromRight 300ms linear;
 }
 
 @media (min-width: 640px) {
@@ -60865,6 +60897,10 @@ body {
     animation: fromBellow 500ms linear;
   }
 
+  .sm\:animate-from-right {
+    animation: fromRight 300ms linear;
+  }
+
   .group:hover .sm\:group-hover\:animate-none {
     animation: none;
   }
@@ -60893,6 +60929,10 @@ body {
     animation: fromBellow 500ms linear;
   }
 
+  .group:hover .sm\:group-hover\:animate-from-right {
+    animation: fromRight 300ms linear;
+  }
+
   .sm\:hover\:animate-none:hover {
     animation: none;
   }
@@ -60919,6 +60959,10 @@ body {
 
   .sm\:hover\:animate-from-bellow:hover {
     animation: fromBellow 500ms linear;
+  }
+
+  .sm\:hover\:animate-from-right:hover {
+    animation: fromRight 300ms linear;
   }
 }
 
@@ -90977,6 +91021,10 @@ body {
     animation: fromBellow 500ms linear;
   }
 
+  .md\:animate-from-right {
+    animation: fromRight 300ms linear;
+  }
+
   .group:hover .md\:group-hover\:animate-none {
     animation: none;
   }
@@ -91005,6 +91053,10 @@ body {
     animation: fromBellow 500ms linear;
   }
 
+  .group:hover .md\:group-hover\:animate-from-right {
+    animation: fromRight 300ms linear;
+  }
+
   .md\:hover\:animate-none:hover {
     animation: none;
   }
@@ -91031,6 +91083,10 @@ body {
 
   .md\:hover\:animate-from-bellow:hover {
     animation: fromBellow 500ms linear;
+  }
+
+  .md\:hover\:animate-from-right:hover {
+    animation: fromRight 300ms linear;
   }
 }
 
@@ -121089,6 +121145,10 @@ body {
     animation: fromBellow 500ms linear;
   }
 
+  .lg\:animate-from-right {
+    animation: fromRight 300ms linear;
+  }
+
   .group:hover .lg\:group-hover\:animate-none {
     animation: none;
   }
@@ -121117,6 +121177,10 @@ body {
     animation: fromBellow 500ms linear;
   }
 
+  .group:hover .lg\:group-hover\:animate-from-right {
+    animation: fromRight 300ms linear;
+  }
+
   .lg\:hover\:animate-none:hover {
     animation: none;
   }
@@ -121143,6 +121207,10 @@ body {
 
   .lg\:hover\:animate-from-bellow:hover {
     animation: fromBellow 500ms linear;
+  }
+
+  .lg\:hover\:animate-from-right:hover {
+    animation: fromRight 300ms linear;
   }
 }
 
@@ -151201,6 +151269,10 @@ body {
     animation: fromBellow 500ms linear;
   }
 
+  .xl\:animate-from-right {
+    animation: fromRight 300ms linear;
+  }
+
   .group:hover .xl\:group-hover\:animate-none {
     animation: none;
   }
@@ -151229,6 +151301,10 @@ body {
     animation: fromBellow 500ms linear;
   }
 
+  .group:hover .xl\:group-hover\:animate-from-right {
+    animation: fromRight 300ms linear;
+  }
+
   .xl\:hover\:animate-none:hover {
     animation: none;
   }
@@ -151255,6 +151331,10 @@ body {
 
   .xl\:hover\:animate-from-bellow:hover {
     animation: fromBellow 500ms linear;
+  }
+
+  .xl\:hover\:animate-from-right:hover {
+    animation: fromRight 300ms linear;
   }
 }
 
@@ -181313,6 +181393,10 @@ body {
     animation: fromBellow 500ms linear;
   }
 
+  .\32xl\:animate-from-right {
+    animation: fromRight 300ms linear;
+  }
+
   .group:hover .\32xl\:group-hover\:animate-none {
     animation: none;
   }
@@ -181341,6 +181425,10 @@ body {
     animation: fromBellow 500ms linear;
   }
 
+  .group:hover .\32xl\:group-hover\:animate-from-right {
+    animation: fromRight 300ms linear;
+  }
+
   .\32xl\:hover\:animate-none:hover {
     animation: none;
   }
@@ -181367,5 +181455,9 @@ body {
 
   .\32xl\:hover\:animate-from-bellow:hover {
     animation: fromBellow 500ms linear;
+  }
+
+  .\32xl\:hover\:animate-from-right:hover {
+    animation: fromRight 300ms linear;
   }
 }
