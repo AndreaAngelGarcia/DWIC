@@ -5,8 +5,19 @@
 @layer base {
     body {
         background-image: url('../img/pattern.png');
-        margin: 0;
-        padding: 0;
+    }
+
+    #banner {
+        background-image: url("../img/bakbaner.png");
+        background-position: -200px -200px;
+    }
+
+    #lateral h3 {
+        background-image: url("../img/pxgray.png");
+    }
+
+    #articles h2 {
+        background-image: url('../img/pxgray.png'), white;
     }
 
     /*FUENTES*/
@@ -42,17 +53,53 @@
     .WebSymbolsRegular {
         font-family: "WebSymbolsRegular";
     }
-    .TrebuchetMS{
+
+    .TrebuchetMS {
         font-family: "TrebuchetMS"
     }
 
-    @layer components {
-        .menu  ul .item{
-            @apply sm:inline-block m-5 tracking-wider cursor-pointer;
-        }
-
-        .menu ul .item a {
-            @apply block hover:text-azulClaro hover:scale-125 transform duration-200;
-        }
+    .gear,.icon {
+        font-family: "WebSymbolsRegular";
     }
+}
+
+@layer components {
+    .menu ul .item {
+        @apply sm:inline-block m-5 tracking-wider cursor-pointer;
+    }
+
+    .menu ul .item a {
+        @apply block hover:text-azulClaro hover:scale-125 transform duration-200;
+    }
+
+    .card {
+        @apply group float-left w-52 h-72 border border-solid border-gray-400 shadow bg-white overflow-hidden m-5 mt-10 cursor-pointer transition-all duration-300 hover:bg-black;
+    }
+
+    .card .icon {
+        transition-duration: 300ms;
+        @apply block w-full h-32 text-5xl text-center mt-8 transition-all;
+    }
+
+    .card .category {
+        transition-duration: 300ms;
+        @apply text-azulOscuro w-full h-12 font-bold m-0 text-xl text-center transition-all;
+    }
+
+    .card .description {
+        @apply text-center text-sm transition-all duration-300;
+    }
+
+    .inpute {
+        @apply block mx-auto mt-8 mb-8 h-10 border border-gray-300 rounded-lg shadow-sm px-6 text-gray-600;
+    }
+
+    .article {
+        @apply w-full max-w-screen-xl mx-auto p-10 bg-white shadow-md border border-gray-300;
+    }
+
+    .data {
+        @apply float-right bg-gray-600 text-white py-2 px-4 text-sm;
+    }
+    
 }

@@ -1,43 +1,255 @@
 <html>
 
 <head>
-    <meta charset="UTF-8"/>
-    <title>Tailwind replica web</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <title>Tailwind replica web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <!--Inicio de Cabecera-->
-    <header id="header" class="w-full lg:h-20 bg-black text-white">
-        <div class="container w-10/12 m-0">
-            <div class="bebas group lg:float-left md:ml-72 w-48 bg-azulClaro text-center lg:mt-2 lg:ml-5 tracking-wide 
+  <!--Inicio de Cabecera-->
+  <header id="header" class="w-full lg:h-20 bg-black text-white">
+    <div class="container w-10/12 m-0">
+      <div class="bebas group lg:float-left md:ml-72 w-48 bg-azulClaro text-center lg:mt-2 lg:ml-5 tracking-wide 
             cursor-pointer sm:ml-56 hover:border-2 hover:bg-gray-300 hover:text-black">
-              <span class="WebSymbolsRegular float-left text-3xl mt-1 ml-11 animate-spin-slow group-hover:animate-from-bellow">S</span>
-              <h3 class="text-3xl transition-all block float-right mt-1 mr-16 group-hover:animate-from-right">BLOG</h3></span>
-            </div>
+        <span class="gear float-left text-3xl mt-1 ml-11 animate-spin-slow group-hover:animate-from-bellow">S</span>
+        <h3 class="text-3xl transition-all block float-right mt-1 mr-16 group-hover:animate-from-right">BLOG</h3></span>
+      </div>
 
-            <nav class="menu bebas float-right bg-transparent text-2xl">
-              <ul>
-                <li class="item"><a class="">INICIO</a></li>
-                <li class="item"><a class="">BLOG</a></li>
-                <li class="item"><a class="">FORMACIÓN</a></li>
-                <li class="item"><a class="">CONTACTO</a></li>
-              </ul>
-            </nav>
-        </div>
+      <nav class="menu bebas float-right bg-transparent text-2xl">
+        <ul>
+          <li class="item"><a class="">INICIO</a></li>
+          <li class="item"><a class="">BLOG</a></li>
+          <li class="item"><a class="">FORMACIÓN</a></li>
+          <li class="item"><a class="">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="wrap wrap-content">
+  <section class="wrap wrap-content mx-auto w-8/12">
     <section id="info">
 
-        <!-- Inicio Banner -->
-        <div id="banner">
-            <h1>CURSOS DE DESARROLLO WEB</h1>
+      <!-- Inicio Banner -->
+      <div id="banner"
+        class="w-11/12 h-24 border-8 border-solid border-white shadow m-5 overflow-hidden animate-back-banner">
+        <h1 class="block w-9/12 text-white text-4xl font-normal tracking-widest m-7 animate-show-text">CURSOS DE
+          DESARROLLO WEB</h1>
+      </div>
+      <!-- Fin Banner -->
+
+      <!--Inicio Tarjetas-->
+      <div class="cards TrebuchetMS">
+
+        <div class="card">
+          <p class="icon  group-hover:text-azulClaro group-hover:text-7xl group-hover:animate-show-icon">H</p>
+          <h2 class="category group-hover:text-white group-hover:animate-show-category">Desarrollo Web</h2>
+          <p class="description group-hover:text-white group-hover:animate-show-description">
+            Aprende los principales lenguajes para desarrollar webs ¡Conviertete en un webmaster!
+          </p>
         </div>
-        <!-- Fin Banner -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <div class="card">
+          <p class="icon group-hover:text-azulClaro group-hover:text-7xl group-hover:animate-show-icon">_</p>
+          <h2 class="category group-hover:text-white">Sistemas operativos</h2>
+          <p class="description group-hover:text-white">
+            Aprende a administrar sisteams Linux y Windows
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="icon group-hover:text-azulClaro group-hover:text-7xl group-hover:animate-show-icon">S</p>
+          <h2 class="category group-hover:text-white">Hardware</h2>
+          <p class="description group-hover:text-white">
+            Conoce los entresijos del hardware
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="icon group-hover:text-azulClaro group-hover:text-7xl group-hover:animate-show-icon">u</p>
+          <h2 class="category group-hover:text-white">Redes e Internet</h2>
+          <p class="description group-hover:text-white">
+            Aprende a configurar y administrar redes informáticas y servidores
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="icon group-hover:text-azulClaro group-hover:text-7xl group-hover:animate-show-icon">a</p>
+          <h2 class="category group-hover:text-white">Bases de datos</h2>
+          <p class="description group-hover:text-white">
+            Aprende a montar y administrar bases de datos
+          </p>
+        </div>
+
+      </div>
+      <!--Fin Tarjetas-->
+    </section>
+    <!--Inicio Barra lateral-->
+    <div class="clearfix"></div>
+    <aside id="lateral" class="TrebuchetMS w-64 h-full font-trebuchet m-4 float-right">
+
+      <h3 class="bebas block w-auto h-10 mt-8 mb-4 text-center font-medium tracking-wide text-3xl px-4 py-3 shadow-lg">BUSCAR</h3>
+      <div id="search" class="w-90 h-10 mx-auto p-2 bg-white border border-gray-300 rounded-lg shadow-sm">
+        <form>
+          <input type="text" class="w-72 h-10 p-2 bg-transparent border-0 text-gray-300 rounded-lg transition-all duration-300 focus:outline-none focus:bg-white"/>
+          <input type="button" value="L" class="icon h-10 cursor-pointer text-base bg-transparent border-0 border-l-1 border-gray-300 pl-2 text-gray-600" />
+        </form>
+      </div>
+
+      <h3>LOGIN</h3>
+      <div id="login" class="aside-box w-72 h-64 mx-auto mt-8 p-2 bg-white shadow-sm sm:shadow-md">
+        <form>
+          <label id="user" class="icon">U</label>
+          <input type="email" class="inpute"/>
+
+          <label id="password" class="icon">w</label>
+          <input type="password" class="inpute"/>
+
+          <input type="submit" value="Entrar" />
+          <input type="reset" value="Limpiar" />
+
+          <a href="#">Registrate aquí</a>
+          <a href="#">¿Has olvidado tu contraseña?</a>
+        </form>
+      </div>
+
+      <h3>REDES SOCIALES</h3>
+      <div id="social" class="aside-box">
+        <div class="twitter">
+          <a href="#" class="icon">t</a>
+          <p class="overlay">
+            Twitter
+          </p>
+        </div>
+        <div class="facebook">
+          <a href="#" class="icon">f</a>
+          <p class="overlay">
+            Facebook
+          </p>
+        </div>
+        <div class="youtube">
+          <a href="#" class="icon">y</a>
+          <p class="overlay">
+            Youtube
+          </p>
+        </div>
+      </div>
+
+      <h3>PATROCINADORES</h3>
+      <div id="sponsors" class="aside-box">
+
+      </div>
+
+    </aside>
+    <!--Fin Barra lateral-->
+
+    <!--Inicio Articulos-->
+    <section id="articles" class="w-8/12 float-left">
+      <h2 class="bebas block w-full h-75 text-center font-normal text-xl leading-tight bg-white shadow-md mt-8 mb-4">Últimos artículos</h2>
+      <div class="clearfix"></div>
+      <article class="article">
+        <div class="data">
+          <span class="m-1.5">Fecha: 12 dic</span>
+          <span class="m-1.5">Categoría: Pruebas</span>
+        </div>
+        <h4 class="text-lg font-bold m-3">
+          <a href="#" class="text-azulOscuro">Titulo del artículo</a>
+        </h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
+          finibus odio lacinia ut. Nullam venenatis arcu sit amet magna sodales placerat. Aenean in pharetra
+          justo. Nulla vel enim tellus. Etiam ex ipsum, suscipit a tincidunt eu, dapibus vitae quam. Vivamus a
+          justo magna. Aenean suscipit ultricies auctor.
+        </p>
+      </article>
+
+      <article class="article">
+        <div class="data">
+          <span class="m-1.5">Fecha: 12 dic</span>
+          <span class="m-1.5">Categoría: Pruebas</span>
+        </div>
+        <h4>
+          <a href="#" class="text-azulOscuro">Titulo del artículo</a>
+        </h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
+          finibus odio lacinia ut. Nullam venenatis arcu sit amet magna sodales placerat. Aenean in pharetra
+          justo. Nulla vel enim tellus. Etiam ex ipsum, suscipit a tincidunt eu, dapibus vitae quam. Vivamus a
+          justo magna. Aenean suscipit ultricies auctor.
+        </p>
+      </article> 
+
+      <article class="article">
+        <div class="data">
+          <span class="m-1.5">Fecha: 12 dic</span>
+          <span class="m-1.5">Categoría: Pruebas</span>
+        </div>
+        <h4>
+          <a href="#" class="text-azulOscuro">Titulo del artículo</a>
+        </h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
+          finibus odio lacinia ut. Nullam venenatis arcu sit amet magna sodales placerat. Aenean in pharetra
+          justo. Nulla vel enim tellus. Etiam ex ipsum, suscipit a tincidunt eu, dapibus vitae quam. Vivamus a
+          justo magna. Aenean suscipit ultricies auctor.
+        </p>
+      </article>
+
+      <article class="article">
+        <div class="data">
+          <span class="m-1.5">Fecha: 12 dic</span>
+          <span class="m-1.5">Categoría: Pruebas</span>
+        </div>
+        <h4>
+          <a href="#" class="text-azulOscuro">Titulo del artículo</a>
+        </h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
+          finibus odio lacinia ut. Nullam venenatis arcu sit amet magna sodales placerat. Aenean in pharetra
+          justo. Nulla vel enim tellus. Etiam ex ipsum, suscipit a tincidunt eu, dapibus vitae quam. Vivamus a
+          justo magna. Aenean suscipit ultricies auctor.
+        </p>
+      </article>
+
+      <article class="article">
+        <div class="data">
+          <span class="m-1.5">Fecha: 12 dic</span>
+          <span class="m-1.5">Categoría: Pruebas</span>
+        </div>
+        <h4>
+          <a href="#" class="text-azulOscuro">Titulo del artículo</a>
+        </h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
+          finibus odio lacinia ut. Nullam venenatis arcu sit amet magna sodales placerat. Aenean in pharetra
+          justo. Nulla vel enim tellus. Etiam ex ipsum, suscipit a tincidunt eu, dapibus vitae quam. Vivamus a
+          justo magna. Aenean suscipit ultricies auctor.
+        </p>
+      </article>
+
+      <article class="article">
+        <div class="data">
+          <span class="m-1.5">Fecha: 12 dic</span>
+          <span class="m-1.5">Categoría: Pruebas</span>
+        </div>
+        <h4>
+          <a href="#" class="text-azulOscuro">Titulo del artículo</a>
+        </h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
+          finibus odio lacinia ut. Nullam venenatis arcu sit amet magna sodales placerat. Aenean in pharetra
+          justo. Nulla vel enim tellus. Etiam ex ipsum, suscipit a tincidunt eu, dapibus vitae quam. Vivamus a
+          justo magna. Aenean suscipit ultricies auctor.
+        </p>
+      </article>
+      <article id="blog">
+        <a href="#">Ir al blog</a>
+      </article>
+    </section>
+    <!--Fin Articulos-->
+
+  </section>
 </body>
 
 </html>
