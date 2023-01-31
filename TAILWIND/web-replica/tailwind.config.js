@@ -73,7 +73,11 @@ module.exports = {
         "azulMedio": "#0072c6",
         "azulOscuro": "#00538c",
         "gris": "#555"
-      }     
+      }, 
+      boxShadow: {
+        'lateral-h3': '0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f',
+        'articles-h2': '0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f'
+      }    
     },
   }  
 }

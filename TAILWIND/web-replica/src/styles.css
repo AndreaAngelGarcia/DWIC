@@ -17,8 +17,15 @@
     }
 
     #articles h2 {
-        background-image: url('../img/pxgray.png'), white;
+        background-image: url('../img/pxgray.png');
     }
+
+        .login input[type="submit"],
+        .login input[type="button"],
+        .login input[type="reset"],
+        .login button {
+            background: linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%);
+        }
 
     /*FUENTES*/
     @font-face {
@@ -101,5 +108,11 @@
     .data {
         @apply float-right bg-gray-600 text-white py-2 px-4 text-sm;
     }
+
+    .lateral-h3 {
+        @apply block w-auto h-11 bebas font-normal tracking-widest text-3xl pl-4 py-2 mt-8 mb-4 shadow-lateral-h3;
+    }
+
+    
     
 }
