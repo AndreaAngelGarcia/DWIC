@@ -8,7 +8,8 @@ module.exports = {
           animation:['responsive', 'hover', 'group-hover'],
           fontSize:['responsive', 'hover', 'group-hover'],
           transform:['responsive', 'hover', 'group-hover'],
-          scale:['responsive', 'hover', 'group-hover']
+          scale:['responsive', 'hover', 'group-hover'],
+          borderRadius:['responsive', 'hover', 'group-hover'],
       }
     },
   theme: {
@@ -56,6 +57,13 @@ module.exports = {
         showDescription: {
           'from': { transform: "translateX(-300%)" },
           'to': { transform: "translateX(0%)" }
+        },
+        blink: {
+          '0%':{border: '10px solid #37bcf9'},
+          '25%': {border: '10px solid green'},
+          '50%':{border: '10px solid yellow'},
+          '75%':{border: '10px solid white'},
+          '100%':{border: '10px solid #37bcf9'}
         }
       },
       animation: {
@@ -66,18 +74,23 @@ module.exports = {
         'show-text' : 'showText 10s linear',
         'show-icon': 'showIcon 300ms linear',
         'show-category': 'showCategory 400ms linear',
-        'show-description': 'showDescription 400ms linear'
+        'show-description': 'showDescription 400ms linear',
+        'blink': 'blink 10s infinite linear'
       },
       colors: {
         "azulClaro": "#37bcf9",
         "azulMedio": "#0072c6",
         "azulOscuro": "#00538c",
-        "gris": "#555"
+        "gris": "#555",
+        "grisOscuro":"#393d3f",
+        "negro": "#333"
       }, 
       boxShadow: {
         'lateral-h3': '0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f',
-        'articles-h2': '0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f'
-      }    
+        'articles': '1px 1px 2px #ddd',
+        'articles-h2': '0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f',
+        'blog': '0px 0px 10px gray'
+      }  
     },
   }  
 }

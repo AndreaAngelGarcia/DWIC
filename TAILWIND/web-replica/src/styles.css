@@ -18,6 +18,11 @@
 
     #articles h2 {
         background-image: url('../img/pxgray.png');
+        line-height: 75px;
+    }
+
+    .footer h5 {
+        background-image: url('../img/pxgray.png');
     }
 
         .login input[type="submit"],
@@ -26,6 +31,20 @@
         .login button {
             background: linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%);
         }
+
+    .blog {
+        line-height: 100px;
+    }
+
+    .blog:hover a{
+        text-shadow: 1px 1px 1px black, 1px 2px 1px black, 1px 3px 1px black, 1px 4px 1px black, 1px 5px 1px black, 1px 6px 1px black; 
+    }
+    
+    .wrap{
+        width: 1250px;
+        margin: 0px auto;
+    }
+
 
     /*FUENTES*/
     @font-face {
@@ -84,12 +103,10 @@
     }
 
     .card .icon {
-        transition-duration: 300ms;
-        @apply block w-full h-32 text-5xl text-center mt-8 transition-all;
+        @apply block w-full h-32 text-5xl text-center mt-7 transition-all;
     }
 
     .card .category {
-        transition-duration: 300ms;
         @apply text-azulOscuro w-full h-12 font-bold m-0 text-xl text-center transition-all;
     }
 
@@ -101,18 +118,72 @@
         @apply block mx-auto mt-8 mb-8 h-10 border border-gray-300 rounded-lg shadow-sm px-6 text-gray-600;
     }
 
+    /*ARTICULOS*/
+
     .article {
-        @apply w-full max-w-screen-xl mx-auto p-10 bg-white shadow-md border border-gray-300;
+        @apply w-11/12 m-10 p-2.5 mx-auto TrebuchetMS bg-white border shadow-articles;
     }
 
     .data {
-        @apply float-right bg-gray-600 text-white py-2 px-4 text-sm;
+        @apply float-right bg-grisOscuro text-white h-8 leading-8 -m-2.5 p-1 text-sm rounded-bl-md;
+    }
+
+    .article h4{
+        @apply block text-2xl font-bold m-0.5;
+    }
+
+    .titulo{
+        @apply no-underline text-azulOscuro;
     }
 
     .lateral-h3 {
         @apply block w-auto h-11 bebas font-normal tracking-widest text-3xl pl-4 py-2 mt-8 mb-4 shadow-lateral-h3;
     }
 
+    /*FOOTER*/
+
+    .footer {
+        @apply w-full h-96 bg-black text-white overflow-y-hidden;
+    }
     
+    .footer .wrap > div {
+        @apply float-left h-96 m-10 text-center text-white TrebuchetMS;
+    }
+
+    .footer a {
+        @apply no-underline text-azulClaro transition-all duration-300;
+    }
+    
+    .footer h5 {
+        @apply block bg-white text-black h-12 tracking-widest text-center bebas text-4xl font-bold leading-10 rounded-md mb-4;
+    }
+    
+    .footer ul {
+        @apply text-left m-5 text-2xl;
+    }
+    
+    .footer ul li {
+        @apply mt-2 p-1 border-b-2;
+    }
+    
+    .footer ul li a {
+        @apply block h-10 transition-all duration-300;
+    }
+    
+    .footer ul li:hover a {
+        @apply pl-10 text-white w-full;
+    }
+    
+    .footer iframe {
+        @apply w-11/12 h-72 mt-2 rounded-md border-4 border-white shadow-lg;
+    }
+
+    .footer img {
+        @apply mb-4 text-center;
+    }
+    
+    .footer .browsers img {
+        @apply w-11 inline-block;
+    }
     
 }

@@ -43,7 +43,7 @@
       <div class="cards TrebuchetMS">
 
         <div class="card">
-          <p class="icon  group-hover:text-azulClaro group-hover:text-7xl group-hover:animate-show-icon">H</p>
+          <p class="icon group-hover:text-azulClaro group-hover:text-7xl group-hover:animate-show-icon">H</p>
           <h2 class="category group-hover:text-white group-hover:animate-show-category">Desarrollo Web</h2>
           <p class="description group-hover:text-white group-hover:animate-show-description">
             Aprende los principales lenguajes para desarrollar webs ¡Conviertete en un webmaster!
@@ -90,7 +90,7 @@
     <aside id="lateral" class="TrebuchetMS w-72 h-full m-5 float-right">
 
       <h3 class="lateral-h3">BUSCAR</h3>
-      <div id="search" class="w-90 h-10 mx-auto p-2 bg-white border border-gray-300 rounded-lg shadow-sm">
+      <div id="search" class="w-11/12 h-8 mx-auto p-2 bg-white border border-gray-300 rounded-lg shadow-sm">
         <form>
           <input type="text"
             class="w-72 h-10 p-2 bg-transparent border-0 text-gray-300 rounded-lg transition-all duration-300 focus:outline-none focus:bg-white" />
@@ -162,17 +162,17 @@
 
     <!--Inicio Articulos-->
     <section id="articles" class="w-8/12 float-left">
-      <h2
-        class="block w-full h-20 bebas text-center font-normal text-4xl tracking-wider bg-white shadow-articles-h2 m-0 mt-5 mb-4 pt-5">
-        Últimos artículos</h2>
+      <h2 class="block w-full h-16 bebas text-center font-normal text-4xl tracking-widest
+      bg-white shadow-articles-h2 m-auto mt-5 mb-3.5">Últimos artículos</h2>
       <div class="clearfix"></div>
+
       <article class="article">
         <div class="data">
           <span class="m-1.5">Fecha: 12 dic</span>
           <span class="m-1.5">Categoría: Pruebas</span>
         </div>
-        <h4 class="text-lg font-bold m-3">
-          <a href="#" class="text-azulOscuro">Titulo del artículo</a>
+        <h4 class="titulo-h4">
+          <a href="#" class="titulo hover:underline">Titulo del artículo</a>
         </h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
@@ -261,13 +261,71 @@
           justo magna. Aenean suscipit ultricies auctor.
         </p>
       </article>
-      <article id="blog">
-        <a href="#">Ir al blog</a>
+      <article class="blog group h-24 mt-16 mb-12 text-center mx-auto border border-gray-300 shadow-sm px-6 text-gray-600 transition-all hover:bg-negro hover:border-8 hover:border-solid hover:shadow-blog hover:rounded-full hover:animate-blink">
+        <a href="#" class="block bebas tracking-widest text-4xl text-azulOscuro no-underline transition-all duration-1000 mt-4  group-hover:text-white">Ir al blog</a>
       </article>
     </section>
     <!--Fin Articulos-->
 
   </section>
+
+  <!--Inicio PIE DE PÁGINA-->
+  <div class="clearfix"></div>
+  <footer class="footer">
+      <div class="wrap">
+
+          <div id="menu_footer">
+              <h5>MENÚ</h5>
+              <ul>
+                  <li><a href="#">INICIO</a></li>
+                  <li><a href="#">BLOG</a></li>
+                  <li><a href="#">FORMACIÓN</a></li>
+                  <li><a href="#">CONTACTO</a></li>
+              </ul>
+          </div>
+
+          <div id="location">
+              <h5>¿DONDE ESTAMOS?</h5>
+              <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.4970246176654!2d-3.6887369813251425!3d40.419991998209966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289a4a865227%3A0x98278b3a144a86f1!2sPuerta%20de%20Alcal%C3%A1!5e0!3m2!1ses!2ses!4v1574443595081!5m2!1ses!2ses"
+                  width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+
+          <div id="info">
+              <h5>Desarrollado con</h5>
+              <p>
+                  <img src="img/html5-badge-h-css3-graphics-multimedia-performance-semantics.png"
+                      alt="Creado HTML y CSS" />
+              </p>
+
+              <h5>Optimizado para</h5>
+              <p id="browsers" class="browsers">
+                  <a href="#">
+                      <img src="img/firefox-icon.png" alt="Firefox" title="Firefox" />
+                  </a>
+                  <a href="#">
+                      <img src="img/chrome.png" alt="Chrome" title="Chrome" />
+                  </a>
+                  <a href="#">
+                      <img src="img/Opera_256x256.png" alt="Opera" title="Opera" />
+                  </a>
+                  <a href="#">
+                      <img src="img/safari.png" alt="Safari" title="Safari" />
+                  </a>
+                  <a href="#">
+                      <img src="img/android.png" alt="android" title="android" />
+                  </a>
+                  <a href="#">
+                      <img src="img/ios.png" alt="Apple" title="Apple" />
+                  </a>
+              </p>
+
+              <h5>AUTOR</h5>
+              <p>&copy; WEB</p>
+          </div>
+      </div>
+  </footer>
+  <!--Fin PIE DE PÁGINA-->
 </body>
 
 </html>
