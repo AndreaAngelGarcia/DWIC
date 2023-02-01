@@ -66,6 +66,14 @@ module.exports = {
           '100%':{border: '10px solid #37bcf9'}
         }
       },
+      height: {
+        banner: '100px',
+        menu: '70px',
+        footer: '470px'
+      },
+      width: {
+        banner: '95.5%'
+      },
       animation: {
         'spin-slow': 'spin 2s linear infinite',
         'from-bellow': 'fromBellow 500ms linear',
@@ -81,6 +89,8 @@ module.exports = {
         "azulClaro": "#37bcf9",
         "azulMedio": "#0072c6",
         "azulOscuro": "#00538c",
+        "azulp":"#0370b9",
+        "azulLogin":"#2f78bc",
         "gris": "#555",
         "grisOscuro":"#393d3f",
         "negro": "#333"

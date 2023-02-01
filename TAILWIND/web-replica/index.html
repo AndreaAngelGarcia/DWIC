@@ -3,18 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <title>Tailwind replica web</title>
+  <meta name="author" content="Andrea Ángel" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link type="text/css" rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
   <!--Inicio de Cabecera-->
-  <header id="header" class="w-full lg:h-20 bg-black text-white">
-    <div class="container w-10/12 m-0">
-      <div class="bebas group lg:float-left md:ml-72 w-48 bg-azulClaro text-center lg:mt-2 lg:ml-5 tracking-wide 
-            cursor-pointer sm:ml-56 hover:border-2 hover:bg-gray-300 hover:text-black">
-        <span class="gear float-left text-3xl mt-1 ml-11 animate-spin-slow group-hover:animate-from-bellow">S</span>
-        <h3 class="text-3xl transition-all block float-right mt-1 mr-16 group-hover:animate-from-right">BLOG</h3></span>
+  <header id="header" class="bebas w-full h-menu bg-black text-white">
+    <div class="container w-8/12 mx-auto">
+      <div class="bebas group float-left w-48 bg-azulClaro text-center mt-2 ml-5 tracking-widest
+            overflow-hidden cursor-pointer hover:border-2 hover:bg-gray-300 hover:text-black">
+        <span class="gear float-left text-3xl mt-1 ml-7 animate-spin-slow group-hover:animate-from-bellow">S </span>
+        <h3
+          class="block text-4xl float-right mt-1.5 mr-16 font-bold transition duration-100 group-hover:animate-from-right">
+          BLOG</h3></span>
       </div>
 
       <nav class="menu bebas float-right bg-transparent text-2xl">
@@ -33,8 +37,8 @@
 
       <!-- Inicio Banner -->
       <div id="banner"
-        class="w-11/12 h-24 border-8 border-solid border-white shadow m-5 overflow-hidden animate-back-banner">
-        <h1 class="block w-9/12 text-white text-4xl font-normal tracking-widest m-7 animate-show-text">CURSOS DE
+        class="w-banner h-banner border-8 border-solid border-white shadow m-5 overflow-hidden animate-back-banner">
+        <h1 class="bebas block w-banner text-white text-5xl font-normal tracking-widest m-7 animate-show-text">CURSOS DE
           DESARROLLO WEB</h1>
       </div>
       <!-- Fin Banner -->
@@ -52,32 +56,32 @@
 
         <div class="card">
           <p class="icon group-hover:text-azulClaro group-hover:text-7xl group-hover:animate-show-icon">_</p>
-          <h2 class="category group-hover:text-white">Sistemas operativos</h2>
-          <p class="description group-hover:text-white">
+          <h2 class="category group-hover:text-white group-hover:animate-show-category">Sistemas operativos</h2>
+          <p class="description group-hover:text-white group-hover:animate-show-description">
             Aprende a administrar sisteams Linux y Windows
           </p>
         </div>
 
         <div class="card">
           <p class="icon group-hover:text-azulClaro group-hover:text-7xl group-hover:animate-show-icon">S</p>
-          <h2 class="category group-hover:text-white">Hardware</h2>
-          <p class="description group-hover:text-white">
+          <h2 class="category group-hover:text-white group-hover:animate-show-category">Hardware</h2>
+          <p class="description group-hover:text-white group-hover:animate-show-description">
             Conoce los entresijos del hardware
           </p>
         </div>
 
         <div class="card">
           <p class="icon group-hover:text-azulClaro group-hover:text-7xl group-hover:animate-show-icon">u</p>
-          <h2 class="category group-hover:text-white">Redes e Internet</h2>
-          <p class="description group-hover:text-white">
+          <h2 class="category group-hover:text-white group-hover:animate-show-category">Redes e Internet</h2>
+          <p class="description group-hover:text-white group-hover:animate-show-description">
             Aprende a configurar y administrar redes informáticas y servidores
           </p>
         </div>
 
         <div class="card">
           <p class="icon group-hover:text-azulClaro group-hover:text-7xl group-hover:animate-show-icon">a</p>
-          <h2 class="category group-hover:text-white">Bases de datos</h2>
-          <p class="description group-hover:text-white">
+          <h2 class="category group-hover:text-white group-hover:animate-show-category">Bases de datos</h2>
+          <p class="description group-hover:text-white group-hover:animate-show-description">
             Aprende a montar y administrar bases de datos
           </p>
         </div>
@@ -86,16 +90,18 @@
       <!--Fin Tarjetas-->
     </section>
     <!--Inicio Barra lateral-->
-    <div class="clearfix"></div>
+    <div class="clearfix float-none clear-both"></div>
     <aside id="lateral" class="TrebuchetMS w-72 h-full m-5 float-right">
 
-      <h3 class="lateral-h3">BUSCAR</h3>
-      <div id="search" class="w-11/12 h-8 mx-auto p-2 bg-white border border-gray-300 rounded-lg shadow-sm">
+      <h3
+        class="lateral-h3 block w-auto h-11 leading-10 shadow-lateral-h3 text-3xl font-normal tracking-widest pl-3.5 mt-7 mb-3.5">
+        BUSCAR</h3>
+      <div id="search" class="w-11/12 h-8 m-2.5 bg-white border border-solid border-gray-300 rounded shadow">
         <form>
           <input type="text"
-            class="w-72 h-10 p-2 bg-transparent border-0 text-gray-300 rounded-lg transition-all duration-300 focus:outline-none focus:bg-white" />
-          <input type="button" value="L"
-            class="icon h-10 cursor-pointer text-base bg-transparent border-0 border-l-1 border-gray-300 pl-2 text-gray-600" />
+            class="w-4/5 h-8 border-none pl-1 rounded bg-transparent text-gray-300 transition-all duration-300 focus:text-gray-600" />
+          <input type="button" value="L" class="icon h-8 cursor-pointer text-base bg-transparent border-l border-solid border-gray-200 text-gray-600
+          pl-1.5" />
         </form>
       </div>
 
@@ -116,9 +122,9 @@
             text-sm font-extralight ml-4 mb-5 transition-all duration-300 hover:shadow" />
 
           <a href="#"
-            class="block text-sm no-underline ml-4 text-gray-500 hover:underline hover:text-azul-medio">Registrate
+            class="block text-sm no-underline ml-4 text-gray-500 hover:underline hover:text-azulLogin">Registrate
             aquí</a>
-          <a href="#" class="block text-sm no-underline ml-4 text-gray-500 hover:underline hover:text-azul-medio">¿Has
+          <a href="#" class="block text-sm no-underline ml-4 text-gray-500 hover:underline hover:text-azulLogin">¿Has
             olvidado tu contraseña?</a>
         </form>
       </div>
@@ -128,43 +134,35 @@
         REDES SOCIALES</h3>
       <div id="social" class="aside-box w-10/12 m-auto mt-5 pt-0.5 bg-white shadow-md h-48">
         <div class="twitter group">
-          <a href="#" class="icon block text-gray-600 no-underline text-3xl ml-5 mt-2.5 mb-5">t</a>
-          <p class="overlay block h-5 font-bold tracking-wider border-2 border-solid border-white shadow bg-gris-claro absolute p-1 ml-16 opacity-0
-            transition-all duration-300 group-hover:opacity-100">
-            Twitter
-          </p>
+          <a href="#" class="icon block text-negro no-underline text-3xl ml-5 mt-2.5 mb-5">t</a>
+          <p class="overlay block h-10 font-bold tracking-wider border-2 border-solid border-white shadow bg-gris-claro absolute p-1 ml-16 opacity-0
+          transition-all duration-300 group-hover:opacity-100">Twitter</p>
         </div>
         <div class="facebook group">
-          <a href="#" class="icon block text-gray-600 no-underline text-3xl ml-5 mt-2.5 mb-5">f</a>
-          <p class="overlay block h-5 font-bold tracking-wider border-2 border-solid border-white shadow bg-gris-claro absolute p-1 ml-16 opacity-0
-            transition-all duration-300 group-hover:opacity-100">
-            Facebook
-          </p>
+          <a href="#" class="icon block text-negro no-underline text-3xl ml-5 mt-2.5 mb-5">f</a>
+          <p class="overlay block h-10 font-bold tracking-wider border-2 border-solid border-white shadow bg-gris-claro absolute p-1 ml-16 opacity-0
+          transition-all duration-300 group-hover:opacity-100">Facebook</p>
         </div>
         <div class="youtube group">
-          <a href="#" class="icon block text-gray-600 no-underline text-3xl ml-5 mt-2.5 mb-5">y</a>
-          <p class="overlay block h-5 font-bold tracking-wider border-2 border-solid border-white shadow bg-gris-claro absolute p-1 ml-16 opacity-0
-            transition-all duration-300 group-hover:opacity-100">
-            Youtube
-          </p>
+          <a href="#" class="icon block text-negro no-underline text-3xl ml-5 mt-2.5 mb-5">y</a>
+          <p class="overlay block h-10 font-bold tracking-wider border-2 border-solid border-white shadow bg-gris-claro absolute p-1 ml-16 opacity-0
+          transition-all duration-300 group-hover:opacity-100">Youtube</p>
         </div>
       </div>
 
-      <h3
-        class="block w-auto h-11 leading-10 shadow-lateral-h3 text-3xl font-normal tracking-widest pl-3.5 mt-7 mb-3.5">
-        PATROCINADORES</h3>
+      <h3 class="block w-auto h-11 leading-10 shadow-lateral-h3 text-3xl font-normal 
+      tracking-widest pl-3.5 mt-7 mb-3.5">PATROCINADORES</h3>
       <div id="sponsors" class="aside-box w-10/12 m-auto mt-5 pt-0.5 bg-white shadow-md h-48">
 
       </div>
 
     </aside>
-    <!--Fin Barra lateral-->
 
-    <!--Inicio Articulos-->
+    <!--ARTICULOS-->
     <section id="articles" class="w-8/12 float-left">
       <h2 class="block w-full h-16 bebas text-center font-normal text-4xl tracking-widest
       bg-white shadow-articles-h2 m-auto mt-5 mb-3.5">Últimos artículos</h2>
-      <div class="clearfix"></div>
+      <div class="clearfix float-none clear-both"></div>
 
       <article class="article">
         <div class="data">
@@ -174,12 +172,10 @@
         <h4 class="titulo-h4">
           <a href="#" class="titulo hover:underline">Titulo del artículo</a>
         </h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
           finibus odio lacinia ut. Nullam venenatis arcu sit amet magna sodales placerat. Aenean in pharetra
           justo. Nulla vel enim tellus. Etiam ex ipsum, suscipit a tincidunt eu, dapibus vitae quam. Vivamus a
-          justo magna. Aenean suscipit ultricies auctor.
-        </p>
+          justo magna. Aenean suscipit ultricies auctor.</p>
       </article>
 
       <article class="article">
@@ -190,12 +186,10 @@
         <h4>
           <a href="#" class="text-azulOscuro">Titulo del artículo</a>
         </h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
           finibus odio lacinia ut. Nullam venenatis arcu sit amet magna sodales placerat. Aenean in pharetra
           justo. Nulla vel enim tellus. Etiam ex ipsum, suscipit a tincidunt eu, dapibus vitae quam. Vivamus a
-          justo magna. Aenean suscipit ultricies auctor.
-        </p>
+          justo magna. Aenean suscipit ultricies auctor.</p>
       </article>
 
       <article class="article">
@@ -206,12 +200,10 @@
         <h4>
           <a href="#" class="text-azulOscuro">Titulo del artículo</a>
         </h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
           finibus odio lacinia ut. Nullam venenatis arcu sit amet magna sodales placerat. Aenean in pharetra
           justo. Nulla vel enim tellus. Etiam ex ipsum, suscipit a tincidunt eu, dapibus vitae quam. Vivamus a
-          justo magna. Aenean suscipit ultricies auctor.
-        </p>
+          justo magna. Aenean suscipit ultricies auctor.</p>
       </article>
 
       <article class="article">
@@ -222,12 +214,10 @@
         <h4>
           <a href="#" class="text-azulOscuro">Titulo del artículo</a>
         </h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
           finibus odio lacinia ut. Nullam venenatis arcu sit amet magna sodales placerat. Aenean in pharetra
           justo. Nulla vel enim tellus. Etiam ex ipsum, suscipit a tincidunt eu, dapibus vitae quam. Vivamus a
-          justo magna. Aenean suscipit ultricies auctor.
-        </p>
+          justo magna. Aenean suscipit ultricies auctor.</p>
       </article>
 
       <article class="article">
@@ -238,12 +228,10 @@
         <h4>
           <a href="#" class="text-azulOscuro">Titulo del artículo</a>
         </h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
           finibus odio lacinia ut. Nullam venenatis arcu sit amet magna sodales placerat. Aenean in pharetra
           justo. Nulla vel enim tellus. Etiam ex ipsum, suscipit a tincidunt eu, dapibus vitae quam. Vivamus a
-          justo magna. Aenean suscipit ultricies auctor.
-        </p>
+          justo magna. Aenean suscipit ultricies auctor.</p>
       </article>
 
       <article class="article">
@@ -254,15 +242,16 @@
         <h4>
           <a href="#" class="text-azulOscuro">Titulo del artículo</a>
         </h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
           finibus odio lacinia ut. Nullam venenatis arcu sit amet magna sodales placerat. Aenean in pharetra
           justo. Nulla vel enim tellus. Etiam ex ipsum, suscipit a tincidunt eu, dapibus vitae quam. Vivamus a
-          justo magna. Aenean suscipit ultricies auctor.
-        </p>
+          justo magna. Aenean suscipit ultricies auctor.</p>
       </article>
-      <article class="blog group h-24 mt-16 mb-12 text-center mx-auto border border-gray-300 shadow-sm px-6 text-gray-600 transition-all hover:bg-negro hover:border-8 hover:border-solid hover:shadow-blog hover:rounded-full hover:animate-blink">
-        <a href="#" class="block bebas tracking-widest text-4xl text-azulOscuro no-underline transition-all duration-1000 mt-4  group-hover:text-white">Ir al blog</a>
+      <article
+        class="blog group h-24 mt-12 mb-12 text-center mx-auto border border-gray-300 shadow-sm px-6 text-gray-600 transition-all hover:bg-negro hover:border-8 hover:border-solid hover:shadow-blog hover:rounded-full hover:animate-blink">
+        <a href="#"
+          class="block bebas tracking-widest text-4xl text-azulOscuro no-underline transition-all duration-1000 mt-4 group-hover:text-white">Ir
+          al blog</a>
       </article>
     </section>
     <!--Fin Articulos-->
@@ -270,62 +259,60 @@
   </section>
 
   <!--Inicio PIE DE PÁGINA-->
-  <div class="clearfix"></div>
-  <footer class="footer">
-      <div class="wrap">
+  <div class="clearfix float-none clear-both"></div>
+  <footer class="footer h-footer">
+    <div class="wrap">
 
-          <div id="menu_footer">
-              <h5>MENÚ</h5>
-              <ul>
-                  <li><a href="#">INICIO</a></li>
-                  <li><a href="#">BLOG</a></li>
-                  <li><a href="#">FORMACIÓN</a></li>
-                  <li><a href="#">CONTACTO</a></li>
-              </ul>
-          </div>
-
-          <div id="location">
-              <h5>¿DONDE ESTAMOS?</h5>
-              <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.4970246176654!2d-3.6887369813251425!3d40.419991998209966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289a4a865227%3A0x98278b3a144a86f1!2sPuerta%20de%20Alcal%C3%A1!5e0!3m2!1ses!2ses!4v1574443595081!5m2!1ses!2ses"
-                  width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-          </div>
-
-          <div id="info">
-              <h5>Desarrollado con</h5>
-              <p>
-                  <img src="img/html5-badge-h-css3-graphics-multimedia-performance-semantics.png"
-                      alt="Creado HTML y CSS" />
-              </p>
-
-              <h5>Optimizado para</h5>
-              <p id="browsers" class="browsers">
-                  <a href="#">
-                      <img src="img/firefox-icon.png" alt="Firefox" title="Firefox" />
-                  </a>
-                  <a href="#">
-                      <img src="img/chrome.png" alt="Chrome" title="Chrome" />
-                  </a>
-                  <a href="#">
-                      <img src="img/Opera_256x256.png" alt="Opera" title="Opera" />
-                  </a>
-                  <a href="#">
-                      <img src="img/safari.png" alt="Safari" title="Safari" />
-                  </a>
-                  <a href="#">
-                      <img src="img/android.png" alt="android" title="android" />
-                  </a>
-                  <a href="#">
-                      <img src="img/ios.png" alt="Apple" title="Apple" />
-                  </a>
-              </p>
-
-              <h5>AUTOR</h5>
-              <p>&copy; WEB</p>
-          </div>
+      <div id="menu_footer" class="float-left w-80 h-96 m-10 text-center text-white">
+        <h5>MENÚ</h5>
+        <ul>
+          <li><a href="#">INICIO</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">FORMACIÓN</a></li>
+          <li><a href="#">CONTACTO</a></li>
+        </ul>
       </div>
+
+      <div id="location">
+        <h5>¿DONDE ESTAMOS?</h5>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.4970246176654!2d-3.6887369813251425!3d40.419991998209966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289a4a865227%3A0x98278b3a144a86f1!2sPuerta%20de%20Alcal%C3%A1!5e0!3m2!1ses!2ses!4v1574443595081!5m2!1ses!2ses"
+          width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+
+      <div id="info">
+        <h5>Desarrollado con</h5>
+        <p>
+          <img src="img/html5-badge-h-css3-graphics-multimedia-performance-semantics.png" alt="Creado HTML y CSS" />
+        </p>
+
+        <h5>Optimizado para</h5>
+        <p id="browsers" class="browsers">
+          <a href="#">
+            <img src="img/firefox-icon.png" alt="Firefox" title="Firefox" />
+          </a>
+          <a href="#">
+            <img src="img/chrome.png" alt="Chrome" title="Chrome" />
+          </a>
+          <a href="#">
+            <img src="img/Opera_256x256.png" alt="Opera" title="Opera" />
+          </a>
+          <a href="#">
+            <img src="img/safari.png" alt="Safari" title="Safari" />
+          </a>
+          <a href="#">
+            <img src="img/android.png" alt="android" title="android" />
+          </a>
+          <a href="#">
+            <img src="img/ios.png" alt="Apple" title="Apple" />
+          </a>
+        </p>
+
+        <h5>AUTOR</h5>
+        <p>&copy; WEB</p>
+      </div>
+    </div>
   </footer>
-  <!--Fin PIE DE PÁGINA-->
 </body>
 
 </html>

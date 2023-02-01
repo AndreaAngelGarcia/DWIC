@@ -12,6 +12,16 @@
         background-position: -200px -200px;
     }
 
+    #social .overlay{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: -52px;
+        transform: translateX(-80%);
+    }
+
+    #social div:hover .overlay{
+        transform: translateX(0%);
+    }
+
     #lateral h3 {
         background-image: url("../img/pxgray.png");
     }
@@ -23,14 +33,15 @@
 
     .footer h5 {
         background-image: url('../img/pxgray.png');
+        line-height: 55px;
     }
 
-        .login input[type="submit"],
-        .login input[type="button"],
-        .login input[type="reset"],
-        .login button {
-            background: linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%);
-        }
+    #login input[type="submit"],
+    #login input[type="button"],
+    #login input[type="reset"],
+    #login button {
+        background: linear-gradient(to bottom, #3eb8e5 0%, #2ca0ca 100%);
+    }
 
     .blog {
         line-height: 100px;
@@ -98,8 +109,9 @@
         @apply block hover:text-azulClaro hover:scale-125 transform duration-200;
     }
 
+    /*CARTAS*/
     .card {
-        @apply group float-left w-52 h-72 border border-solid border-gray-400 shadow bg-white overflow-hidden m-5 mt-10 cursor-pointer transition-all duration-300 hover:bg-black;
+        @apply group float-left w-52 h-80 border border-solid border-gray-400 shadow bg-white overflow-hidden m-5 mt-10 cursor-pointer transition-all duration-300 hover:bg-black;
     }
 
     .card .icon {
@@ -111,13 +123,15 @@
     }
 
     .card .description {
-        @apply text-center text-sm transition-all duration-300;
+        @apply text-center text-azulp text-sm transition-all duration-300;
     }
 
     .inpute {
         @apply block mx-auto mt-8 mb-8 h-10 border border-gray-300 rounded-lg shadow-sm px-6 text-gray-600;
     }
 
+    /* Iconos */
+    
     /*ARTICULOS*/
 
     .article {
@@ -143,7 +157,7 @@
     /*FOOTER*/
 
     .footer {
-        @apply w-full h-96 bg-black text-white overflow-y-hidden;
+        @apply w-full bg-black text-white overflow-y-hidden;
     }
     
     .footer .wrap > div {
@@ -155,7 +169,7 @@
     }
     
     .footer h5 {
-        @apply block bg-white text-black h-12 tracking-widest text-center bebas text-4xl font-bold leading-10 rounded-md mb-4;
+        @apply block bg-white text-black h-12 tracking-widest text-center bebas text-4xl font-bold rounded-md mt-3.5 mb-3.5;
     }
     
     .footer ul {
@@ -163,7 +177,7 @@
     }
     
     .footer ul li {
-        @apply mt-2 p-1 border-b-2;
+        @apply mt-2 p-1 border-b-2 list-disc;
     }
     
     .footer ul li a {
