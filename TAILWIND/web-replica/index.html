@@ -11,14 +11,12 @@
 
 <body>
   <!--Inicio de Cabecera-->
-  <header id="header" class="bebas w-full h-menu bg-black text-white">
-    <div class="container w-8/12 mx-auto">
-      <div class="bebas group float-left w-48 bg-azulClaro text-center mt-2 ml-5 tracking-widest
+  <header id="header" class="header bebas w-full h-menu bg-black text-white">
+    <div class="wrap wrap-content mx-auto w-8/12">
+      <div class="logo bebas group float-left w-48 bg-azulClaro text-center mt-2 ml-5 tracking-widest
             overflow-hidden cursor-pointer hover:border-2 hover:bg-gray-300 hover:text-black">
         <span class="gear float-left text-3xl mt-1 ml-7 animate-spin-slow group-hover:animate-from-bellow">S </span>
-        <h3
-          class="block text-4xl float-right mt-1.5 mr-16 font-bold transition duration-100 group-hover:animate-from-right">
-          BLOG</h3></span>
+        <h3 class="block text-4xl float-right mt-1.5 mr-16 font-bold transition duration-100 group-hover:animate-from-right">BLOG</h3></span>
       </div>
 
       <nav class="menu bebas float-right bg-transparent text-2xl">
@@ -35,15 +33,12 @@
   <section class="wrap wrap-content mx-auto w-8/12">
     <section id="info">
 
-      <!-- Inicio Banner -->
-      <div id="banner"
-        class="w-banner h-banner border-8 border-solid border-white shadow m-5 overflow-hidden animate-back-banner">
-        <h1 class="bebas block w-banner text-white text-5xl font-normal tracking-widest m-7 animate-show-text">CURSOS DE
-          DESARROLLO WEB</h1>
+      <!-- BANNER -->
+      <div id="banner" class="banner w-banner h-banner border-8 border-solid border-white shadow m-5 overflow-hidden animate-back-banner">
+        <h1 class="bebas block w-banner text-white text-5xl font-normal tracking-widest m-7 animate-show-text">CURSOS DE DESARROLLO WEB</h1>
       </div>
-      <!-- Fin Banner -->
 
-      <!--Inicio Tarjetas-->
+      <!--TARJETAS-->
       <div class="cards TrebuchetMS">
 
         <div class="card">
@@ -87,15 +82,13 @@
         </div>
 
       </div>
-      <!--Fin Tarjetas-->
     </section>
-    <!--Inicio Barra lateral-->
-    <div class="clearfix float-none clear-both"></div>
-    <aside id="lateral" class="TrebuchetMS w-72 h-full m-5 float-right">
 
-      <h3
-        class="lateral-h3 block w-auto h-11 leading-10 shadow-lateral-h3 text-3xl font-normal tracking-widest pl-3.5 mt-7 mb-3.5">
-        BUSCAR</h3>
+    <!--BARRA LATERAL-->
+    <div class="clearfix float-none clear-both"></div>
+    <aside id="lateral" class="lateral TrebuchetMS w-72 h-full m-5 float-right">
+
+      <h3 class="lateral-h3"> BUSCAR</h3>
       <div id="search" class="w-11/12 h-8 m-2.5 bg-white border border-solid border-gray-300 rounded shadow">
         <form>
           <input type="text"
@@ -106,7 +99,7 @@
       </div>
 
       <h3 class="lateral-h3">LOGIN</h3>
-      <div id="login" class="aside-box w-10/12 h-60 m-auto mt-5 pt-0.5 bg-white shadow-md">
+      <div id="login" class="login aside-box w-10/12 h-60 m-auto mt-5 pt-0.5 bg-white shadow-md">
         <form>
           <label id="user" class="icon block text-center absolute ml-3.5 mt-1.5 h-7">U</label>
           <input type="email" class="block m-auto mt-5 w-11/12 h-7 border border-solid border-gray-200 shadow rounded pl-7 text-gray-400 focus:text-gray-500 
@@ -129,8 +122,7 @@
         </form>
       </div>
 
-      <h3
-        class="block w-auto h-11 leading-10 shadow-lateral-h3 text-3xl font-normal tracking-widest pl-3.5 mt-7 mb-3.5">
+      <h3 class="lateral-h3">
         REDES SOCIALES</h3>
       <div id="social" class="aside-box w-10/12 m-auto mt-5 pt-0.5 bg-white shadow-md h-48">
         <div class="twitter group">
@@ -150,8 +142,7 @@
         </div>
       </div>
 
-      <h3 class="block w-auto h-11 leading-10 shadow-lateral-h3 text-3xl font-normal 
-      tracking-widest pl-3.5 mt-7 mb-3.5">PATROCINADORES</h3>
+      <h3 class="lateral-h3">PATROCINADORES</h3>
       <div id="sponsors" class="aside-box w-10/12 m-auto mt-5 pt-0.5 bg-white shadow-md h-48">
 
       </div>
@@ -159,7 +150,7 @@
     </aside>
 
     <!--ARTICULOS-->
-    <section id="articles" class="w-8/12 float-left">
+    <section id="articles" class="articles w-8/12 float-left">
       <h2 class="block w-full h-16 bebas text-center font-normal text-4xl tracking-widest
       bg-white shadow-articles-h2 m-auto mt-5 mb-3.5">Últimos artículos</h2>
       <div class="clearfix float-none clear-both"></div>
@@ -184,7 +175,7 @@
           <span class="m-1.5">Categoría: Pruebas</span>
         </div>
         <h4>
-          <a href="#" class="text-azulOscuro">Titulo del artículo</a>
+          <a href="#" class="titulo hover:underline">Titulo del artículo</a>
         </h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
           finibus odio lacinia ut. Nullam venenatis arcu sit amet magna sodales placerat. Aenean in pharetra
@@ -198,7 +189,7 @@
           <span class="m-1.5">Categoría: Pruebas</span>
         </div>
         <h4>
-          <a href="#" class="text-azulOscuro">Titulo del artículo</a>
+          <a href="#" class="titulo hover:underline">Titulo del artículo</a>
         </h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
           finibus odio lacinia ut. Nullam venenatis arcu sit amet magna sodales placerat. Aenean in pharetra
@@ -212,7 +203,7 @@
           <span class="m-1.5">Categoría: Pruebas</span>
         </div>
         <h4>
-          <a href="#" class="text-azulOscuro">Titulo del artículo</a>
+          <a href="#" class="titulo hover:underline">Titulo del artículo</a>
         </h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
           finibus odio lacinia ut. Nullam venenatis arcu sit amet magna sodales placerat. Aenean in pharetra
@@ -226,7 +217,7 @@
           <span class="m-1.5">Categoría: Pruebas</span>
         </div>
         <h4>
-          <a href="#" class="text-azulOscuro">Titulo del artículo</a>
+          <a href="#" class="titulo hover:underline">Titulo del artículo</a>
         </h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
           finibus odio lacinia ut. Nullam venenatis arcu sit amet magna sodales placerat. Aenean in pharetra
@@ -240,7 +231,7 @@
           <span class="m-1.5">Categoría: Pruebas</span>
         </div>
         <h4>
-          <a href="#" class="text-azulOscuro">Titulo del artículo</a>
+          <a href="#" class="titulo hover:underline">Titulo del artículo</a>
         </h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat rhoncus libero, vitae
           finibus odio lacinia ut. Nullam venenatis arcu sit amet magna sodales placerat. Aenean in pharetra
@@ -248,17 +239,16 @@
           justo magna. Aenean suscipit ultricies auctor.</p>
       </article>
       <article
-        class="blog group h-24 mt-12 mb-12 text-center mx-auto border border-gray-300 shadow-sm px-6 text-gray-600 transition-all hover:bg-negro hover:border-8 hover:border-solid hover:shadow-blog hover:rounded-full hover:animate-blink">
+        class="blog group h-24 mt-12 mb-12 text-center mx-auto bg-white border border-gray-300 shadow-sm px-6 text-gray-600 transition-all hover:bg-negro hover:border-8 hover:border-solid hover:shadow-blog hover:rounded-full hover:animate-blink">
         <a href="#"
           class="block bebas tracking-widest text-4xl text-azulOscuro no-underline transition-all duration-1000 mt-4 group-hover:text-white">Ir
           al blog</a>
       </article>
     </section>
-    <!--Fin Articulos-->
 
   </section>
 
-  <!--Inicio PIE DE PÁGINA-->
+  <!--FOOTER-->
   <div class="clearfix float-none clear-both"></div>
   <footer class="footer h-footer">
     <div class="wrap">

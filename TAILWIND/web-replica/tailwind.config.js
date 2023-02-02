@@ -96,11 +96,23 @@ module.exports = {
         "negro": "#333"
       }, 
       boxShadow: {
+        'banner': '0px 0px 2px gray',
         'lateral-h3': '0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f',
         'articles': '1px 1px 2px #ddd',
         'articles-h2': '0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f',
         'blog': '0px 0px 10px gray'
-      }  
+      },
+      screens: {
+        'xl': {'max:': '1250px'},
+        '1080':{'max': '1080px'},
+        '970':{'max': '970px'},
+        '925':{'max': '925px'},
+        '899':{'max': '899px'},
+        '799':{'max': '799px'},
+        '724':{'max': '724px'},
+        '660':{'max': '660px'},
+        '475':{'max': '475px'}
+      }
     },
   }  
 }

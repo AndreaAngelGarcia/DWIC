@@ -12,13 +12,13 @@
         background-position: -200px -200px;
     }
 
-    #social .overlay{
+    #social .overlay {
         font-family: Arial, Helvetica, sans-serif;
         margin-top: -52px;
         transform: translateX(-80%);
     }
 
-    #social div:hover .overlay{
+    #social div:hover .overlay {
         transform: translateX(0%);
     }
 
@@ -47,11 +47,11 @@
         line-height: 100px;
     }
 
-    .blog:hover a{
-        text-shadow: 1px 1px 1px black, 1px 2px 1px black, 1px 3px 1px black, 1px 4px 1px black, 1px 5px 1px black, 1px 6px 1px black; 
+    .blog:hover a {
+        text-shadow: 1px 1px 1px black, 1px 2px 1px black, 1px 3px 1px black, 1px 4px 1px black, 1px 5px 1px black, 1px 6px 1px black;
     }
-    
-    .wrap{
+
+    .wrap {
         width: 1250px;
         margin: 0px auto;
     }
@@ -95,109 +95,245 @@
         font-family: "TrebuchetMS"
     }
 
-    .gear,.icon {
+    .gear, .icon {
         font-family: "WebSymbolsRegular";
     }
 }
 
 @layer components {
     .menu ul .item {
-        @apply sm:inline-block m-5 tracking-wider cursor-pointer;
+        @apply inline-block m-5 tracking-wider cursor-pointer
     }
 
     .menu ul .item a {
-        @apply block hover:text-azulClaro hover:scale-125 transform duration-200;
+        @apply block hover:text-azulClaro hover:scale-125 transform duration-200
     }
 
     /*CARTAS*/
     .card {
-        @apply group float-left w-52 h-80 border border-solid border-gray-400 shadow bg-white overflow-hidden m-5 mt-10 cursor-pointer transition-all duration-300 hover:bg-black;
+        @apply group float-left w-52 h-80 border border-solid border-gray-400 shadow bg-white overflow-hidden m-5 mt-10 cursor-pointer transition-all duration-300 hover:bg-black
     }
 
     .card .icon {
-        @apply block w-full h-32 text-5xl text-center mt-7 transition-all;
+        @apply block w-full h-32 text-5xl text-center mt-7 transition-all
     }
 
     .card .category {
-        @apply text-azulOscuro w-full h-12 font-bold m-0 text-xl text-center transition-all;
+        @apply text-azulOscuro w-full h-12 font-bold m-0 text-xl text-center transition-all
     }
 
     .card .description {
-        @apply text-center text-azulp text-sm transition-all duration-300;
+        @apply text-center text-azulp text-sm transition-all duration-300
     }
 
     .inpute {
-        @apply block mx-auto mt-8 mb-8 h-10 border border-gray-300 rounded-lg shadow-sm px-6 text-gray-600;
+        @apply block mx-auto mt-8 mb-8 h-10 border border-gray-300 rounded-lg shadow-sm px-6 text-gray-600
     }
 
-    /* Iconos */
-    
     /*ARTICULOS*/
 
     .article {
-        @apply w-11/12 m-10 p-2.5 mx-auto TrebuchetMS bg-white border shadow-articles;
+        @apply w-11/12 m-10 p-2.5 mx-auto TrebuchetMS bg-white border shadow-articles
     }
 
     .data {
-        @apply float-right bg-grisOscuro text-white h-8 leading-8 -m-2.5 p-1 text-sm rounded-bl-md;
+        @apply float-right bg-grisOscuro text-white h-8 leading-8 -m-2.5 p-1 text-sm rounded-bl-md
     }
 
-    .article h4{
-        @apply block text-2xl font-bold m-0.5;
+    .article h4 {
+        @apply block text-2xl font-bold m-0.5
     }
 
-    .titulo{
-        @apply no-underline text-azulOscuro;
+    .titulo {
+        @apply no-underline text-azulOscuro
     }
 
     .lateral-h3 {
-        @apply block w-auto h-11 bebas font-normal tracking-widest text-3xl pl-4 py-2 mt-8 mb-4 shadow-lateral-h3;
+        @apply block bebas w-auto h-11 bg-white leading-10 shadow-lateral-h3 text-3xl font-normal tracking-widest pl-3.5 mt-7 mb-3.5
     }
 
     /*FOOTER*/
 
     .footer {
-        @apply w-full bg-black text-white overflow-y-hidden;
+        @apply w-full bg-black text-white overflow-y-hidden
     }
-    
-    .footer .wrap > div {
-        @apply float-left h-96 m-10 text-center text-white TrebuchetMS;
+
+    .footer .wrap>div {
+        @apply float-left h-96 m-10 text-center text-white TrebuchetMS
     }
 
     .footer a {
-        @apply no-underline text-azulClaro transition-all duration-300;
+        @apply no-underline text-azulClaro transition-all duration-300
     }
-    
+
     .footer h5 {
-        @apply block bg-white text-black h-12 tracking-widest text-center bebas text-4xl font-bold rounded-md mt-3.5 mb-3.5;
+        @apply block bg-white text-black h-12 tracking-widest text-center bebas text-4xl font-bold rounded-md mt-3.5 mb-3.5
     }
-    
+
     .footer ul {
-        @apply text-left m-5 text-2xl;
+        @apply text-left m-5 text-2xl
     }
-    
+
     .footer ul li {
-        @apply mt-2 p-1 border-b-2 list-disc;
+        @apply mt-2 p-1 border-b-2 list-disc
     }
-    
+
     .footer ul li a {
-        @apply block h-10 transition-all duration-300;
+        @apply block h-10 transition-all duration-300
     }
-    
+
     .footer ul li:hover a {
-        @apply pl-10 text-white w-full;
+        @apply pl-10 text-white w-full
     }
-    
+
     .footer iframe {
-        @apply w-11/12 h-72 mt-2 rounded-md border-4 border-white shadow-lg;
+        @apply w-11/12 h-72 mt-2 rounded-md border-4 border-white shadow-lg
     }
 
     .footer img {
-        @apply mb-4 text-center;
+        @apply mb-4 text-center
     }
-    
+
     .footer .browsers img {
-        @apply w-11 inline-block;
+        @apply w-11 inline-block
+    }
+
+    /*RESPONSIVE*/
+
+    .wrap {
+        @apply xl:w-11/12 xl:m-auto
+    }
+
+    .header {
+        @apply 724:w-full 724:h-32 475:w-full 475:h-72 475:pt-2.5
+    }
+
+    .logo {
+        @apply 724:float-none 724:w-52 724:m-0 475:float-left
+    }
+
+    .menu {
+        @apply 724:clear-both 724:float-none 724:w-96 724:m-0 475:clear-both 475:float-none 475:w-full 475:m-0
+    }
+
+    .menu ul li {
+        @apply 475:w-full 475:leading-10
+    }
+      
+    .menu ul li a {
+        @apply 475:w-full 475:leading-10
     }
     
+    .menu ul li a:hover {
+        @apply 475:text-azulClaro 475:transform scale-100
+    }
+    
+    .banner {
+        @apply xl:w-full sm:w-full md:w-full lg:w-full 475:h-20
+    }
+
+    .banner h1 {
+        @apply xl:text-4xl xl:text-center xl:m-8 md:text-3xl lg:text-3xl 799:text-3xl 660:text-2xl 475:text-lg
+    }
+
+    .card {
+        @apply xl:w-1/5 799:h-auto
+    }
+
+    .card p {
+        @apply xl:block xl:w-11/12 xl:m-0 xl:text-center
+    }
+
+    .card .icon {
+        @apply 475:text-4xl
+    }
+
+    .card:hover .icon {
+        @apply 475:text-4xl
+    }
+
+    .card .category {
+        @apply 1080:text-base 799:text-base 799:-mt-6 475:text-sm
+    }
+
+    .card .description {
+        @apply 1080:text-sm 799:hidden
+    }
+
+    .articles {
+        @apply xl:w-8/12 1080:w-7/12 970:w-7/12 925:w-8/12 660:float-none 660:w-full 660:m-0 
+    }
+
+    .articles article {
+        @apply xl:w-full
+    }
+
+    .articles .data {
+        @apply 475:float-none 475:-m-2.5 475:rounded-none
+    }
+    
+    .articles article h4 {
+        @apply 475:mt-5
+    }
+
+    .lateral {
+        @apply 925:w-3/12
+    }
+
+    .lateral h3 {
+        @apply 899:text-xl 660:float-none 660:w-full 660:m-0 660:mt-5
+    }
+
+    .lateral input[type="text"] {
+        @apply 925:w-9/12 724:w-3/4 660:w-11/12 475:w-10/12
+    }
+
+    .aside-box {
+        @apply 925:w-11/12 925:h-auto 925:pb-2.5
+    }
+
+    .login a {
+        @apply 925:mt-2.5 925:mb-2.5
+    }
+
+    .login input[type="email"],
+    .login input[type="password"] {
+        @apply 925:w-8/12 660:w-11/12
+    }
+
+    .login .user
+    .login .password {
+        @apply 925:ml-6
+    }
+
+    .login input[type="submit"],
+    .login input[type="button"],
+    .login input[type="reset"],
+    .login button {
+        @apply 925:mb-0
+    }
+
+    .login input[type="reset"] {
+        @apply 925:hidden
+    }
+
+    .footer {
+        @apply 660:h-auto 660:pb-10
+    }
+
+    .footer .wrap > div {
+        @apply xl:w-3/12 970:w-3/12 970:m-5 660:w-full 660:m-0 660:mt-5
+    }
+
+    .footer #browsers img {
+        @apply xl:w-2/12
+    }
+
+    .footer img {
+        @apply 799:mb-4 799:max-w-full
+    }
+
+    .footer h5 {
+        @apply xl:text-3xl 970:text-xl 660:text-2xl
+    }
 }
