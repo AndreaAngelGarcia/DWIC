@@ -67,7 +67,7 @@ module.exports = {
         }
       },
       backgroundImage: {
-        'banner': "url('/img/banner.jpg')",
+        'banner': "url('../img/banner.jpg')",
       },
       height: {
         banner: '720px',
