@@ -20,51 +20,18 @@ module.exports = {
           '50%': {transform: 'translateY(56px)' },
           '100%': { transform: 'translateY(0px)' },
         },
-        rotateGear: {
-          '0%': { transform: 'rotate(0deg)' },
-          '100%': { transform: 'rotate(360deg)' },
-        }, 
-        fromRight: {
-          '0%': { transform: 'translateX(56px)'  },
-          '100%': { transform: 'translateX(0px)' },
+        keyframes: {
+          'fade-up': {
+            '0%': {
+              opacity: '0',
+              transform: 'translateY(1rem)'
+            },
+            '100%': {
+              opacity: '1',
+              transform: 'translateY(0)'
+            }
+          }
         },
-        backBanner: {
-          '0%': { 'background-position': '0px 0px'},
-          '100%': {'background-position': '-200px -200px'}
-        },
-        showText: {
-          '0%' : {transform: 'translateX(-600%) scale(5,5)',
-                  opacity: '1' },
-          '50%' : {transform: 'translateX(600%) scale(5,5)',
-                  opacity: '1'},
-          '75%' : {transform: 'translateX(-600%) scale(5,5)',
-                  'text-shadow': 'none',
-                  color: 'transparent',
-                  opacity: '0'},
-          '100%' : {transform: 'translateX(0%) scale(1,1)',
-                  'text-shadow': '2px 2px 1px black',
-                  color: 'white',
-                  opacity: '1'},
-          },
-        showIcon: {
-          'from': { transform: "translateY(-200%)" },
-          'to': { transform: "translateY(0%)" }
-        },
-        showCategory: {
-          'from': { transform: "translateY(-300%)" },
-          'to': { transform: "translateY(0%)" }
-        },
-        showDescription: {
-          'from': { transform: "translateX(-300%)" },
-          'to': { transform: "translateX(0%)" }
-        },
-        blink: {
-          '0%':{border: '10px solid #37bcf9'},
-          '25%': {border: '10px solid green'},
-          '50%':{border: '10px solid yellow'},
-          '75%':{border: '10px solid white'},
-          '100%':{border: '10px solid #37bcf9'}
-        }
       },
       backgroundImage: {
         'banner': "url('../img/banner.jpg')",
@@ -78,15 +45,8 @@ module.exports = {
         banner: '95.5%'
       },
       animation: {
-        'spin-slow': 'spin 2s linear infinite',
-        'from-bellow': 'fromBellow 500ms linear',
-        'from-right': 'fromRight 300ms linear',
-        'back-banner' : 'backBanner 10s linear',
-        'show-text' : 'showText 10s linear',
-        'show-icon': 'showIcon 300ms linear',
-        'show-category': 'showCategory 400ms linear',
-        'show-description': 'showDescription 400ms linear',
-        'blink': 'blink 10s infinite linear'
+        'fade-up': 'fade-up 0.5s ease-out',
+        'spin-slow': 'spin 2s linear infinite', 
       },
       colors: {
         "azulClaro": "#37bcf9",
@@ -106,15 +66,11 @@ module.exports = {
         'blog': '0px 0px 10px gray'
       },
       screens: {
-        'xl': {'max:': '1250px'},
-        '1080':{'max': '1080px'},
-        '970':{'max': '970px'},
-        '925':{'max': '925px'},
-        '899':{'max': '899px'},
-        '799':{'max': '799px'},
-        '724':{'max': '724px'},
-        '660':{'max': '660px'},
-        '475':{'max': '475px'}
+        '2xl': {'max:': '1536px'},
+        'xl': {'max:': '1280px'},
+        'lg': {'max:': '1024px'},
+        'md': {'max:': '768px'},
+        'sm': {'max:': '640px'}
       }
     },
   }  
