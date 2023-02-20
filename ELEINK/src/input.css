@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Italiana', serif;
+        src: url('https://fonts.googleapis.com/css2?family=Italiana&family=League+Spartan:wght@300&family=Montserrat:ital@1&family=Open+Sans&display=swap');
+    }
+
+    .italiana {
+        font-family: 'Italiana', serif;
+    }
+
+    #banner {
+        background-image: url('../img/banner.jpg');
+        /*height: 600px;*/
+    }
+
+    .hamburguesa {
+        display: block;
+    }
+    
+    .open {
+        display:inline;
+    }
+      
+}

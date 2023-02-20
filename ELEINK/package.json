@@ -1,20 +1,16 @@
 {
-  "name": "eleink",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "npx tailwindcss build ./src/styles.css -o ./css/styles.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Andrea Angel",
-  "license": "ISC",
-  "devDependencies": {
-    "autoprefixer": "^10.2.4",
-    "postcss": "^8.2.6",
-    "tailwindcss": "^2.0.3"
-  },
   "dependencies": {
-    "aos": "^2.3.4"
-  }
+    "aos": "^2.3.4",
+    "tailwindcss": "^3.2.7"
+  },
+  "name": "tailwind-ultima-version-andreilla",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

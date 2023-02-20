@@ -1,345 +1,277 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>INICIO</title>
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INICIO</title>
+  <link href="../dist/output.css" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--LINK PARA ANIMACIONES-->
-    <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
-
-<body class="bg-white aos-init">
-    <!--MENÚ NAVEGACIÓN-->
-    <div class="bg-white">
-        <div class="px-4 py-6 mx-auto lg:py-8 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-            <div class="relative flex items-center justify-between lg:justify-center lg:space-x-16">
-                <ul class="flex items-center hidden space-x-8 lg:flex">
-                    <li><a href="/" aria-label="Our product" title="Our product"
-                            class="font-medium text-3xl p-16 tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400">INICIO</a>
-                    </li>
-                    <li><a href="portfolio.html" aria-label="Our product" title="Our product"
-                            class="font-medium text-3xl p-16 tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400">PORTFOLIO</a>
-                    </li>
-                </ul>
-                <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
-                    <img src="../img/LOGO.PNG" width="150px">
-                </a>
-                <ul class="flex items-center hidden space-x-8 lg:flex">
-                    <li><a href="/" aria-label="About us" title="About us"
-                            class="font-medium text-3xl p-16 tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400">PIDE
-                            CITA</a></li>
-                    <li><a href="/" aria-label="Sign in" title="Sign in"
-                            class="font-medium text-3xl p-16 tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400">MERCHANDISING</a>
-                    </li>
-                </ul>
-                <!-- Mobile menu -->
-                <div class="lg:hidden">
-                    <button aria-label="Open Menu" title="Open Menu"
-                        class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline">
-                        <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
-                            <path fill="currentColor"
-                                d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
-                            <path fill="currentColor"
-                                d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"></path>
-                            <path fill="currentColor"
-                                d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
-                        </svg>
-                    </button>
-                    <!-- Mobile menu dropdown 
-        <div class="absolute top-0 left-0 w-full">
-          <div class="p-5 bg-white border rounded shadow-sm">
-            <div class="flex items-center justify-between mb-4">
-              <div>
-                <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
-                  <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
-                    <rect x="3" y="1" width="7" height="12"></rect>
-                    <rect x="3" y="17" width="7" height="6"></rect>
-                    <rect x="14" y="1" width="7" height="6"></rect>
-                    <rect x="14" y="11" width="7" height="12"></rect>
-                  </svg>
-                  <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Company</span>
-                </a>
-              </div>
-              <div>
-                <button aria-label="Close Menu" title="Close Menu" class="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
-                  <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
-                    <path
-                      fill="currentColor"
-                      d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <nav>
-              <ul class="space-y-4">
-                <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Product</a></li>
-                <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Features</a></li>
-                <li><a href="/" aria-label="Product pricing" title="Product pricing" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Pricing</a></li>
-                <li><a href="/" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">About us</a></li>
-                <li><a href="/" aria-label="Sign in" title="Sign in" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Sign in</a></li>
-                <li>
-                  <a
-                    href="/"
-                    class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                    aria-label="Sign up"
-                    title="Sign up"
-                  >
-                    Sign up
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--BANNER-->
-    <section class="relative bg-banner h-banner bg-cover bg-center bg-no-repeat animate-fadeIn aos-animate" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000">
-        <img src="../img/border1.png" width="100%">
-        <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
-            <div class="relative flex min-h-screen items-center justify-center">
-                <h1 class="animate-torch select-none whitespace-nowrap bg-gradient-to-r from-black via-white to-black bg-[length:100px_30px] bg-clip-text bg-no-repeat text-lg font-bold uppercase text-transparent sm:bg-[length:200px_50px] sm:text-4xl">Tailwind is Awesome</h1>
-              </div>
-              
-            <div class="max-w-xl text-right sm:text-right">
-                <h1 class="text-3xl font-extrabold sm:text-5xl">
-                    ELENA CONDE
-                </h1>
-                <p class="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
-                    TATTOO ARTIST & PIERCER
-                </p>
-                
-            </div>
-            <!--<img src="../img/border2.png" width="100%">-->
-        </div>
-        
-    </section>
-
-    <!--ABOUT ELENA-->
-    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" data-aos="zoom-in">
-        <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-            <div>
-                <p
-                    class="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-                    Brand new
-                </p>
-            </div>
-            <h2
-                class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-                <span class="relative inline-block">
-                    <svg viewBox="0 0 52 24" fill="currentColor"
-                        class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block">
-                        <defs>
-                            <pattern id="3071a3ad-db4a-4cbe-ac9a-47850b69e4b7" x="0" y="0" width=".135" height=".30">
-                                <circle cx="1" cy="1" r=".7"></circle>
-                            </pattern>
-                        </defs>
+<body>
+  <div class="bg-gray-900">
+    <div class="px-4 py-6 mx-auto lg:py-8 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+      <div class="relative flex items-center justify-between lg:justify-center lg:space-x-16">
+        <ul class="flex items-center hidden space-x-8 lg:flex">
+          <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">INICIO</a></li>
+          <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">PORTFOLIO</a></li>
+        </ul>
+        <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
+          <img src="../img/LOGO-BOTON.png" class="w-32">
+        </a>
+        <ul class="flex items-center hidden space-x-8 lg:flex">
+          <li><a href="/" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">PIDE CITA</a></li>
+          <li><a href="/" aria-label="Sign in" title="Sign in" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">TIENDA</a></li>
+        </ul>
+        <!-- Mobile menu -->
+        <div class="lg:hidden">
+          <button aria-label="Open Menu" title="Open Menu" class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline">
+            <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path>
+              <path fill="currentColor" d="M23,6H1C0.4,6,0,5.6,0,5s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,6,23,6z"></path>
+              <path fill="currentColor" d="M23,20H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,20,23,20z"></path>
+            </svg>
+          </button>
+          <!-- Mobile menu dropdown 
+          <div class="absolute top-0 left-0 w-full">
+            <div class="p-5 bg-white border rounded shadow-sm">
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <a href="/" aria-label="Company" title="Company" class="inline-flex items-center">
+                    <svg class="w-8 text-deep-purple-accent-400" viewBox="0 0 24 24" stroke-linejoin="round" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" stroke="currentColor" fill="none">
+                      <rect x="3" y="1" width="7" height="12"></rect>
+                      <rect x="3" y="17" width="7" height="6"></rect>
+                      <rect x="14" y="1" width="7" height="6"></rect>
+                      <rect x="14" y="11" width="7" height="12"></rect>
                     </svg>
-                    <span class="relative">The</span>
-                </span>
-                quick, brown fox jumps over a lazy dog
-            </h2>
-            <p class="text-base text-gray-700 md:text-lg">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque
-                ipsa quae.
-            </p>
+                    <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Company</span>
+                  </a>
+                </div>
+                <div>
+                  <button aria-label="Close Menu" title="Close Menu" class="p-2 -mt-2 -mr-2 transition duration-200 rounded hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                    <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
+                      <path
+                        fill="currentColor"
+                        d="M19.7,4.3c-0.4-0.4-1-0.4-1.4,0L12,10.6L5.7,4.3c-0.4-0.4-1-0.4-1.4,0s-0.4,1,0,1.4l6.3,6.3l-6.3,6.3 c-0.4,0.4-0.4,1,0,1.4C4.5,19.9,4.7,20,5,20s0.5-0.1,0.7-0.3l6.3-6.3l6.3,6.3c0.2,0.2,0.5,0.3,0.7,0.3s0.5-0.1,0.7-0.3 c0.4-0.4,0.4-1,0-1.4L13.4,12l6.3-6.3C20.1,5.3,20.1,4.7,19.7,4.3z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <nav>
+                <ul class="space-y-4">
+                  <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Product</a></li>
+                  <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Features</a></li>
+                  <li><a href="/" aria-label="Product pricing" title="Product pricing" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Pricing</a></li>
+                  <li><a href="/" aria-label="About us" title="About us" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">About us</a></li>
+                  <li><a href="/" aria-label="Sign in" title="Sign in" class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">Sign in</a></li>
+                  <li>
+                    <a
+                      href="/"
+                      class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                      aria-label="Sign up"
+                      title="Sign up"
+                    >
+                      Sign up
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          -->
         </div>
-        <div class="grid max-w-screen-lg gap-8 lg:grid-cols-2 sm:mx-auto">
-            <div class="flex flex-col justify-center">
-                <div class="flex">
-                    <div class="mr-4">
-                        <div class="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-indigo-50">
-                            <svg class="w-8 h-8 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
-                                <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
-                                    points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                            </svg>
-                        </div>
-                    </div>
-                    <div>
-                        <h6 class="mb-2 font-semibold leading-5">
-                            They urge you to put down
-                        </h6>
-                        <p class="text-sm text-gray-900">
-                            Skate ipsum dolor sit amet, alley oop vert mute-air Colby Carter flail 180 berm. Half-cab
-                            camel back ollie transition ledge Wes Humpston 1080.
-                        </p>
-                        <hr class="w-full my-6 border-gray-300" />
-                    </div>
-                </div>
-                <div class="flex">
-                    <div class="mr-4">
-                        <div class="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-indigo-50">
-                            <svg class="w-8 h-8 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
-                                <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
-                                    points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                            </svg>
-                        </div>
-                    </div>
-                    <div>
-                        <h6 class="mb-2 font-semibold leading-5">The powerless in a world</h6>
-                        <p class="text-sm text-gray-900">
-                            The first mate and his Skipper too will do their very best to make the others comfortable in
-                            their tropic island nest. Michael Knight a young loner.
-                        </p>
-                        <hr class="w-full my-6 border-gray-300" />
-                    </div>
-                </div>
-                <div class="flex">
-                    <div class="mr-4">
-                        <div class="flex items-center justify-center w-10 h-10 mb-3 rounded-full bg-indigo-50">
-                            <svg class="w-8 h-8 text-deep-purple-accent-400" stroke="currentColor" viewBox="0 0 52 52">
-                                <polygon stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"
-                                    points="29 13 14 29 25 29 23 39 38 23 27 23"></polygon>
-                            </svg>
-                        </div>
-                    </div>
-                    <div>
-                        <h6 class="mb-2 font-semibold leading-5">Tell them I hate them</h6>
-                        <p class="text-sm text-gray-900">
-                            Chase ball of string eat plants, meow, and throw up because I ate plants going to catch the
-                            red dot today going to catch the red dot today. I could pee on this if I had the energy.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="grid grid-cols-2 gap-5">
-                <img class="object-cover w-full h-56 col-span-2 rounded shadow-lg"
-                    src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                    alt="" />
-                <img class="object-cover w-full h-48 rounded shadow-lg"
-                    src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                    alt="" />
-                <img class="object-cover w-full h-48 rounded shadow-lg"
-                    src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-                    alt="" />
-            </div>
+      </div>
+    </div>
+  </div>
+
+  <!--BANNER-->
+  <section id="banner" class="relative bg-banner h-banner bg-cover bg-center bg-no-repeat animate-fadeIn aos-animate" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1000">
+    <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">         
+        <div class="max-w-xl text-right sm:text-right">
+            <h1 class="text-3xl font-extrabold sm:text-5xl">
+                ELENA CONDE
+            </h1>
+            <p class="mt-4 max-w-lg sm:text-xl sm:leading-relaxed">
+                TATTOO ARTIST & PIERCER
+            </p>
+            
         </div>
     </div>
+    
+</section>
 
-    <footer class="text-center bg-gray-900 text-white">
-        <div class="px-6 pt-6">
-          <div class="flex justify-center mb-6">
-            <a href="#!" type="button" class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
-              <svg aria-hidden="true"
-              focusable="false"
-              data-prefix="fab"
-              data-icon="facebook-f"
-              class="w-2 h-full mx-auto"
-              role="img"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 320 512"
-            >
-              <path
-                fill="currentColor"
-                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
-              ></path>
-              </svg>
-            </a>
-      
-            <a href="#!" type="button" class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
-              <svg aria-hidden="true"
-              focusable="false"
-              data-prefix="fab"
-                data-icon="twitter"
-                class="w-3 h-full mx-auto"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-              >
-                <path
-                  fill="currentColor"
-                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
-                ></path>
-              </svg>
-            </a>
-      
-            <a href="#!" type="button" class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
-              <svg aria-hidden="true"
-              focusable="false"
-              data-prefix="fab"
-                data-icon="google"
-                class="w-3 h-full mx-auto"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 488 512"
-              >
-                <path
-                  fill="currentColor"
-                  d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
-                ></path>
-              </svg>
-            </a>
-      
-            <a href="#!" type="button" class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
-              <svg aria-hidden="true"
-              focusable="false"
-              data-prefix="fab"
-              data-icon="instagram"
-                class="w-3 h-full mx-auto"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512"
-              >
-                <path
-                  fill="currentColor"
-                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                ></path>
-              </svg>
-            </a>
-      
-            <a href="#!" type="button" class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
-              <svg aria-hidden="true"
-              focusable="false"
-              data-prefix="fab"
-              data-icon="linkedin-in"
-                class="w-3 h-full mx-auto"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512"
-              >
-                <path
-                  fill="currentColor"
-                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
-                ></path>
-              </svg>
-            </a>
-      
-            <a href="#!" type="button" class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
-              <svg aria-hidden="true"
-              focusable="false"
-              data-prefix="fab"
-              data-icon="github"
-                class="w-3 h-full mx-auto"
-                role="img"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 496 512"
-              >
-                <path
-                  fill="currentColor"
-                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
-                ></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-      
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2023 Copyright:
-          <a class="text-whitehite" href="https://tailwind-elements.com/">Elena Conde</a>
-        </div>
-      </footer>
+<!--ABOUT ELENA-->
+<section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+      <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+          <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+        </svg>
+      </div>
+      <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+        <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Shooting Stars</h2>
+        <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
+        <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col">
+      <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+        <h2 class="text-gray-900 text-lg title-font font-medium mb-2">The Catalyzer</h2>
+        <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
+        <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+          <circle cx="6" cy="6" r="3"></circle>
+          <circle cx="6" cy="18" r="3"></circle>
+          <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+        </svg>
+      </div>
+    </div>
+    <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
+      <div class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0">
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="sm:w-16 sm:h-16 w-10 h-10" viewBox="0 0 24 24">
+          <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+      </div>
+      <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+        <h2 class="text-gray-900 text-lg title-font font-medium mb-2">The 400 Blows</h2>
+        <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
+        <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <button class="flex mx-auto mt-20 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+  </div>
+</section>
 
-      
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
+<footer class="text-center bg-gray-900 text-white">
+    <div class="px-6 pt-6">
+      <div class="flex justify-center mb-6">
+        <a href="#!" type="button" class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+          <svg aria-hidden="true"
+          focusable="false"
+          data-prefix="fab"
+          data-icon="facebook-f"
+          class="w-2 h-full mx-auto"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 320 512"
+        >
+          <path
+            fill="currentColor"
+            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+          ></path>
+          </svg>
+        </a>
+  
+        <a href="#!" type="button" class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+          <svg aria-hidden="true"
+          focusable="false"
+          data-prefix="fab"
+            data-icon="twitter"
+            class="w-3 h-full mx-auto"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="currentColor"
+              d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+            ></path>
+          </svg>
+        </a>
+  
+        <a href="#!" type="button" class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+          <svg aria-hidden="true"
+          focusable="false"
+          data-prefix="fab"
+            data-icon="google"
+            class="w-3 h-full mx-auto"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 488 512"
+          >
+            <path
+              fill="currentColor"
+              d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+            ></path>
+          </svg>
+        </a>
+  
+        <a href="#!" type="button" class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+          <svg aria-hidden="true"
+          focusable="false"
+          data-prefix="fab"
+          data-icon="instagram"
+            class="w-3 h-full mx-auto"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+            ></path>
+          </svg>
+        </a>
+  
+        <a href="#!" type="button" class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+          <svg aria-hidden="true"
+          focusable="false"
+          data-prefix="fab"
+          data-icon="linkedin-in"
+            class="w-3 h-full mx-auto"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path
+              fill="currentColor"
+              d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"
+            ></path>
+          </svg>
+        </a>
+  
+        <a href="#!" type="button" class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+          <svg aria-hidden="true"
+          focusable="false"
+          data-prefix="fab"
+          data-icon="github"
+            class="w-3 h-full mx-auto"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 496 512"
+          >
+            <path
+              fill="currentColor"
+              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-whitehite" href="https://tailwind-elements.com/">Elena Conde</a>
+    </div>
+  </footer>
+
 </body>
-
 </html>
