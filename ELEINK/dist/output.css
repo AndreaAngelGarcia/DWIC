@@ -434,12 +434,8 @@ video {
   /*height: 600px;*/
 }
 
-.hamburguesa {
-  display: block;
-}
-
 .open {
-  display:inline;
+  display:block;
 }
 
 *, ::before, ::after {

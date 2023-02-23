@@ -16,13 +16,9 @@
         background-image: url('../img/banner.jpg');
         /*height: 600px;*/
     }
-
-    .hamburguesa {
-        display: block;
-    }
-    
+   
     .open {
-        display:inline;
+        display:block;
     }
       
 }
