@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link href="../dist/output.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--LINK PARA ANIMACIONES-->
+</head>
+
+<body>
+    <!-- component -->
+    <div class="h-screen md:flex">
+        <div class="relative overflow-hidden md:flex w-1/2 bg-purple-800 justify-around items-center hidden">
+            <div>
+                <h1 class="text-white font-bold text-4xl font-sans">GoFinance</h1>
+                <p class="text-white mt-1">The most popular peer to peer lending at SEA</p>
+                <button type="submit"
+                    class="block w-28 bg-white text-indigo-800 mt-4 py-2 rounded-2xl font-bold mb-2">Read More</button>
+            </div>
+            <div class="absolute -bottom-32 -left-40 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8">
+            </div>
+            <div class="absolute -bottom-40 -left-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8">
+            </div>
+            <div class="absolute -top-40 -right-0 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
+            <div class="absolute -top-20 -right-20 w-80 h-80 border-4 rounded-full border-opacity-30 border-t-8"></div>
+        </div>
+
+
+        <div class="relative mx-auto flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 py-6 sm:py-12">
+            <div class="absolute inset-0 bg-[url(/img/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]">
+            </div>
+            <div
+                class="relative mx-auto w-full max-w-md bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:rounded-xl sm:px-10">
+                <div class="w-full">
+                    <div class="text-center">
+                        <h1 class="text-3xl font-semibold text-gray-900">INICIA SESIÓN</h1>
+                    </div>
+                    <div class="mt-8">
+                        <form action="">
+                            <div class="relative mt-5">
+                                <input type="email" name="email" id="email" placeholder="Email Address"
+                                    class="peer w-full rounded-md border border-gray-300 px-3 py-3 shadow shadow-gray-100 placeholder:text-transparent focus:border-gray-500 focus:outline-none"
+                                    autocomplete="off" />
+                                <label for="email"
+                                    class="pointer-events-none absolute top-0 left-0 ml-3 origin-left -translate-y-1/2 transform bg-white px-1 text-sm text-gray-500 transition-all duration-100 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:ml-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-0 peer-focus:ml-3 peer-focus:text-sm peer-focus:text-gray-800">Email</label>
+                            </div>
+                            <div class="relative mt-5">
+                                <input type="password" name="password" id="password" placeholder="Password"
+                                    class="peer peer w-full rounded-md border border-gray-300 px-3 py-3 shadow shadow-gray-100 placeholder:text-transparent focus:border-gray-500 focus:outline-none" />
+
+                                <label for="password"
+                                    class="pointer-events-none absolute top-0 left-0 ml-3 origin-left -translate-y-1/2 transform bg-white px-1 text-sm text-gray-500 transition-all duration-100 ease-in-out peer-placeholder-shown:top-1/2 peer-placeholder-shown:ml-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-0 peer-focus:ml-3 peer-focus:text-sm peer-focus:text-gray-800">Contraseña</label>
+                            </div>
+                            <div class="my-6">
+                                <button type="submit" class="w-full rounded-md bg-black px-3 py-4 text-white focus:bg-neutral-800 focus:outline-none">INICIA SESIÓN</button>
+                            </div>
+                            <p class="text-center text-sm text-gray-500">¿No tienes cuenta? <a href="#!"
+                                    class="font-semibold text-gray-600 hover:underline focus:text-gray-800 focus:outline-none">Regístrate</a>.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
