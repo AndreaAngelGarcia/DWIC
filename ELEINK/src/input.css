@@ -12,6 +12,15 @@
         font-family: 'Italiana', serif;
     }
 
+    @font-face {
+        font-family: 'Italianno';
+        src: url('../fonts/Italianno-Regular.ttf');
+    }
+
+    .italianno {
+        font-family: 'Italianno';        
+    }
+    
     #banner {
         background-image: url('../img/banner.jpg');
         /*height: 600px;*/
@@ -19,6 +28,14 @@
    
     .open {
         display:block;
+    }
+
+    .content {
+        display:none;
+    }
+
+    .active {
+        display: block;
     }
       
 }
