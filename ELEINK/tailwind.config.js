@@ -24,10 +24,10 @@ module.exports = {
         'spin-slow': 'spin 2s linear infinite', 
       },
       backgroundImage: {
-        'banner': "url('/img/banner.jpg')",
+        'banner': "url('/img/banner2.jpg')",
       },
       height: {
-        banner: '520px',
+        banner: '920px',
         menu: '70px',
         footer: '470px'
       },
